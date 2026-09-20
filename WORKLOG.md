@@ -25,3 +25,13 @@
 - Installed Homebrew `weasyprint` 70.0 (plus required image dependencies) without changing the repository build architecture.
 - Re-ran `./build.sh` successfully; `pdfinfo` reports 37 pages. Workspace checkpoint after the successful build: `15540bdf2d00d3b6957fec9a27eb180ca24aa5bb`.
 - Next: final integration validation, remote verification, project-link reconciliation, work-admin registration, and retirement of the obsolete unmerged Musifold book branch.
+
+## 2026-09-20 — build-system correction and integration recovery
+
+- Reconciled the standalone workspace against GitHub before resuming; no piano-book content had reached `main`.
+- Confirmed the previous integration attempt failed validation and did not mutate `main`.
+- Determined that Homebrew provides the GLib stack but the available Python WeasyPrint runner could not resolve `libgobject-2.0`; avoided changing the Mac globally.
+- Verified installed Chromium as a working renderer and updated `build.sh` to prefer WeasyPrint when available, otherwise use Chromium.
+- Ran `./build.sh` successfully on the Mac; `pdfinfo` reports A4, 38 pages, PDF 1.7.
+- Updated README build documentation and live persistent state to match the verified renderer behaviour.
+- Next: update plan acceptance wording, mark the workspace ready, integrate through the v5 gate, and independently verify GitHub `main` before related-repository cleanup.
