@@ -1,9 +1,9 @@
 # Status — Piano Without Fear of Black Keys
 
-**Last verified checkpoint:** 2026-09-20 staging candidate reconstructed from the completed v1.3 revision; corrected one-page philosophy now uses `function → pitch spelling → register → instrument geometry`; 16 SVG teaching diagrams present.
+**Last verified checkpoint:** 2026-09-20 v1.3 standalone repository candidate rebuilt successfully on the Mac with Pandoc + Homebrew WeasyPrint 70.0; PDF is 37 pages; static source/asset checks previously passed (16 referenced SVGs = 16 assets, four-layer model and project architecture verified).
 
-**Current phase/task:** establish and verify standalone GitHub repository.
+**Current phase/task:** final standalone-repository integration and ecosystem reconciliation.
 
-**Blocking issues:** none in the book source. Repository publication must be reconciled against live Mac/GitHub state before mutation.
+**Blocking issues:** none.
 
-**Exact next action:** on the Mac, verify that `krahd/piano-without-fear-of-black-keys` does not already exist and then create/resume an isolated repository workspace from GitHub-safe state; success means a durable pushed checkpoint exists without modifying Musifold `main`.
+**Exact next action:** mark workspace job `piano-book-v13-20260920-a1` ready and integrate it into `origin/main` with build + static validation; success means GitHub `main` contains the complete v1.3 book and generated PDF and the remote ref is independently verified.

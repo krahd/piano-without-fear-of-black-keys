@@ -21,7 +21,7 @@ Version 1.2 changes: author/contact on the cover; compact preface with reading p
 
 ## Build
 
-The PDF is reproducible with Pandoc + WeasyPrint:
+The PDF is reproducible with Pandoc + WeasyPrint. On macOS with Homebrew, install the renderer with `brew install weasyprint`, then run:
 
 ```sh
 ./build.sh
