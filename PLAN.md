@@ -16,7 +16,7 @@ Maintain *Piano Without Fear of Black Keys* as a standalone book repository whil
 1. Publish the corrected v1.3 source as a standalone GitHub repository.
 2. Preserve the explicit four-layer model: `function → pitch spelling → register → instrument geometry`.
 3. Preserve the register/shape revision and fixed-register exercises.
-4. Keep all original SVG teaching diagrams and a reproducible Pandoc + WeasyPrint build.
+4. Keep all original SVG teaching diagrams and a reproducible Pandoc build with WeasyPrint or verified Chromium fallback.
 5. Verify source/image completeness, PDF preflight, and representative rendered pages.
 6. Commit and push through an isolated workspace/checkpoint flow where applicable.
 7. Independently verify the GitHub remote ref and repository contents.
