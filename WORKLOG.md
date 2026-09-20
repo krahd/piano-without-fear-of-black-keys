@@ -35,3 +35,11 @@
 - Ran `./build.sh` successfully on the Mac; `pdfinfo` reports A4, 38 pages, PDF 1.7.
 - Updated README build documentation and live persistent state to match the verified renderer behaviour.
 - Next: update plan acceptance wording, mark the workspace ready, integrate through the v5 gate, and independently verify GitHub `main` before related-repository cleanup.
+
+## 2026-09-20 — canonical renderer reconciliation
+
+- Confirmed the installed canonical renderer is WeasyPrint 70.0 with Pandoc 3.11; `build.sh` correctly prefers it and retains Chromium only as a fallback.
+- Rebuilt the standalone book on the Mac with WeasyPrint 70.0; `pdfinfo` reports 37 pages, A4, PDF 1.7. The earlier 38-page result was produced by the Chromium fallback and is superseded as the canonical PDF.
+- Diagnosed two safe integration-gate failures: one validation argument was expanded by the outer shell before reaching the temporary integration worktree; a later literal validation proved the temporary worktree contained all expected staged files.
+- Measured integration predicates individually: build succeeds, 16 referenced SVGs equal 16 assets, the four-layer model is present, `git diff --check` passes, and the only mismatch was the obsolete 38-page expectation.
+- Next: mark the updated workspace ready, integrate with the corrected 37-page acceptance gate, independently verify GitHub `main`, reconcile related-project/work-admin documentation, retire the obsolete unmerged Musifold book branch, and mark persistent state COMPLETE.
