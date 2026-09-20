@@ -1,9 +1,9 @@
 # Status — Piano Without Fear of Black Keys
 
-**Last verified checkpoint:** 2026-09-20 workspace branch `ai/workspace/piano-book-v13-20260920-a1` is pushed at `7407dcc268ef90bbd7faf278e030831527e3cbbc`; the standalone repository is `krahd/piano-without-fear-of-black-keys`; GitHub `main` remains the bootstrap commit pending final integration. The canonical source contains the v1.3 four-layer model and all 16 referenced SVG teaching diagrams. `./build.sh` succeeds on the Mac and produces an A4, 38-page PDF using Pandoc plus WeasyPrint when available, with Chromium as the verified fallback.
+**Last verified checkpoint:** 2026-09-20 standalone workspace `piano-book-v13-20260920-a1` contains the complete v1.3 source, all 16 referenced SVG teaching diagrams, corrected four-layer model, and a reproducible build. On the Mac, `./build.sh` uses installed WeasyPrint 70.0 (Pandoc 3.11) and produces an A4, 37-page PDF; Chromium remains a fallback. The workspace branch is pushed; GitHub `main` is still the bootstrap commit pending successful integration.
 
-**Current phase/task:** final persistent-state reconciliation, integration-gate validation, ecosystem documentation reconciliation, and remote verification.
+**Current phase/task:** final integration, remote verification, related-project/work-admin reconciliation, obsolete Musifold branch retirement, and completion-state update.
 
 **Blocking issues:** none.
 
-**Exact next action:** update `CONTINUATION_PROMPT.md` and append the corrected Mac-build/integration history to `WORKLOG.md`, then mark workspace job `piano-book-v13-20260920-a1` ready and integrate it through the v5 workspace gate with the verified static/build validation. Success means GitHub `main` contains the complete standalone v1.3 book and the remote ref/content are independently verified.
+**Exact next action:** update the continuation/worklog to record the canonical 37-page WeasyPrint result, mark the workspace ready, and integrate it through the v5 workspace gate with build/static validation. Success means GitHub `main` contains the complete standalone v1.3 book and the remote ref/content are independently verified.
