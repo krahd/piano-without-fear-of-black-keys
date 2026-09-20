@@ -21,13 +21,13 @@ Version 1.2 changes: author/contact on the cover; compact preface with reading p
 
 ## Build
 
-The PDF is reproducible with Pandoc + WeasyPrint. On macOS with Homebrew, install the renderer with `brew install weasyprint`, then run:
+The PDF is reproducible from the canonical Markdown and `style.css` with Pandoc plus either WeasyPrint or Chromium:
 
 ```sh
 ./build.sh
 ```
 
-The build regenerates `book.html` and `Piano_Without_Fear_of_Black_Keys.pdf` from the canonical Markdown and `style.css`.
+`build.sh` prefers an installed `weasyprint`; on macOS it falls back to `/Applications/Chromium.app/Contents/MacOS/Chromium`, and on other systems it can use a `chromium` executable on `PATH`. The build regenerates `book.html` and `Piano_Without_Fear_of_Black_Keys.pdf`.
 
 ## Pitch notation
 
