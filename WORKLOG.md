@@ -43,3 +43,7 @@
 - Diagnosed two safe integration-gate failures: one validation argument was expanded by the outer shell before reaching the temporary integration worktree; a later literal validation proved the temporary worktree contained all expected staged files.
 - Measured integration predicates individually: build succeeds, 16 referenced SVGs equal 16 assets, the four-layer model is present, `git diff --check` passes, and the only mismatch was the obsolete 38-page expectation.
 - Next: mark the updated workspace ready, integrate with the corrected 37-page acceptance gate, independently verify GitHub `main`, reconcile related-project/work-admin documentation, retire the obsolete unmerged Musifold book branch, and mark persistent state COMPLETE.
+
+## 2026-09-21 — canonical completion verification
+
+Verified current GitHub `main` already contains the complete standalone v1.3 book. Fresh `./build.sh` succeeded with WeasyPrint 70.0 and produced a 37-page A4 PDF. Confirmed 16 unique manuscript SVG references, 16 SVG assets, the four-layer model, absence of the stale three-layer formulation, and clean `git diff --check`. The previous 38-page expectation was superseded by the reproducible current 37-page build. Project state set to COMPLETE.
