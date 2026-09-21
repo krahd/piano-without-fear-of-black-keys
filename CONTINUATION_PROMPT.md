@@ -1,7 +1,3 @@
-# Continuation prompt
+# Continuation Prompt — Piano Without Fear of Black Keys
 
-Resume *Piano Without Fear of Black Keys* from the canonical repository `krahd/piano-without-fear-of-black-keys`. Read `STATUS.md`, then `PLAN.md`, then the latest `WORKLOG.md`. Reconcile with actual GitHub/Mac state before mutation. Keep Musifold (`krahd/musifold`) as the separate interactive cross-instrument application and Ableton Note Helper (`krahd/ableton-note-helper`) as its narrower predecessor/reference tool; do not fold this standalone piano book into Musifold.
-
-The current v1.3 book source contains the explicit four-layer model `function → pitch spelling → register → instrument geometry`, the register/shape revision, all 16 referenced SVG teaching diagrams, and a reproducible `build.sh`. On the Mac, `./build.sh` is verified with Pandoc 3.11 and installed WeasyPrint 70.0 to produce an A4, 37-page PDF. Chromium remains a fallback renderer.
-
-Use only the Mac Git Bridge for Mac filesystem/shell/Git operations. Resume workspace job `piano-book-v13-20260920-a1` if it is not yet integrated; use small timeout-safe operations. Do not retry ambiguous mutations without inspecting actual Git/remote state first. Completion requires the standalone book integrated to GitHub `main`, remote ref/content independently verified, related Musifold/Ableton/work-admin documentation reconciled without conflating the projects, the obsolete unmerged Musifold book branch retired only after verification, and persistent state updated to `COMPLETE`. Continue autonomously until the completion gate passes or a genuine external blocker is established.
+The v1.3 standalone book is complete and canonical on GitHub `main`. No continuation is required unless new work is requested. If work resumes, inspect current `main` first and treat it as authoritative; do not recreate or re-integrate the historical `piano-book-v13-20260920-a1` workspace.
