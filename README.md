@@ -36,6 +36,11 @@ To reproduce **the current public v1.3.1 PDF** at the stable root filename, run 
 
 This invokes `edition-design/v1.3.1/build.py` and copies the resulting versioned PDF to `Piano_Without_Fear_of_Black_Keys.pdf`. Requirements: Python 3 with BeautifulSoup4 and WeasyPrint, Pandoc, and the documented book fonts. The old v1.3 build is separate: `sh edition-design/v1.3/build.sh`; it writes only to the archived versioned PDF, not the public filename.
 
+## Editorial work
+
+- [v1.3.1 critical audit and proposed improvements](audits/v1.3.1-2026-10-25.md). The published transposition-first purpose and the two reading paths remain intact; this is an audit, **not** an edited edition.
+- [Separate successor-book concept](successor-book/CONCEPT.md), descended from this manual but concerned with instrumental geometry and what musicians know through playing. It is **not** version 1.4, not the absolute-beginner preparatory companion, and not yet a finished book or separately named repository.
+
 ## Pitch notation
 
 The book uses scientific pitch notation with middle C = C4. Some software and hardware use different octave-number labels for the same MIDI pitches; the octave numbers here follow the book's stated convention rather than a product-specific display convention.
