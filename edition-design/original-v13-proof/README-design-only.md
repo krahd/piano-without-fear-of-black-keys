@@ -1,3 +1,17 @@
+## Version 1.3.1 cover corrections (25 October 2026)
+
+The approved design direction now has a [v1.3.1 six-page proof](Piano_Without_Fear_of_Black_Keys_v1.3.1_design_proof.pdf), alongside the original design test below. The corresponding [HTML](design-proof.html) and [source generator](build_proof.py) have been updated.
+
+- Author credit on cover: **Tomas Laurenzo**, without accent.
+- Version on cover: **1.3.1**, October 2026.
+- Cover subtitle (five fixed lines): `A transposition-first manual` / `for piano,` / `Ableton Push,` / `Ableton Note,` / `and guitar`.
+- Redundant kicker removed.
+- Body specimen uses original v1.3 text without rewriting, with a 160 × 230 mm book layout.
+- **This is not a complete v1.3.1 publication.** Whole-book typesetting, native SVG integration, complete text integrity, appendix pagination and production preflight remain outstanding. Original v1.3 text/PDF on main remain untouched.
+- The conceptual question of **“transposition-first”** is reserved for **v1.4**.
+
+---
+
 # Book-design track: original-text specimen
 
 **Status:** typesetting trial for review; NOT a new edition of the manuscript.
