@@ -4,6 +4,8 @@
 
 **PDF:** `Piano_Without_Fear_of_Black_Keys_v1.3.1.pdf` (53 pages, 160 × 230 mm).
 
+**Public stable filename:** [`../../Piano_Without_Fear_of_Black_Keys.pdf`](../../Piano_Without_Fear_of_Black_Keys.pdf) is an exact copy of the versioned release. The root `./build.sh` produces this copy; its old v1.3 output is archived separately.
+
 The book is derived directly from `../../piano_transposition_manual.md` and the original SVGs in `../../assets/`. The entire manuscript after the original cover closing `</section>` is unchanged. This is a **visual publication update**, not the rejected v2 prose rewrite. The `main`-branch original v1.3 book and its build system are retained separately.
 
 ## Changes in v1.3.1
