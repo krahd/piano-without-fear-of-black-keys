@@ -39,3 +39,13 @@ The exercise is only successful if the reader can transfer the *relationship*, n
 - This is a separate edition-2 prototype and must not be presented as a completed book.
 - A future complete edition needs music-theory fact checking; playable exercise pilots; authorial review; independent diagram validation; recorded examples; real print/screen preflight.
 - The future absolute-beginner companion is a separate publication and should not be merged into this volume.
+
+## Seven-page designed proof
+
+The design proof is a curated, illustrated seven-page preview of the chapter, not a substitute for the full [working chapter](CHAPTER.md). The designed pages can be reviewed in [PDF](design/Piano_Without_Fear_v2_Chapter_Prototype.pdf), as a [contact sheet](design/contact-sheet.png), or in [self-contained HTML](design/prototype-01-design-proof.html).
+
+The reproducible source is [design/create_visual.py](design/create_visual.py). Run `python3 create_visual.py` from that directory with WeasyPrint, Pillow and PyMuPDF installed. The script writes the HTML, PDF, page images and contact sheet alongside itself. It uses Lato and Noto Serif when available and system fallback fonts otherwise. The explicit page count for the current designed sample is **7**, including its chapter title page. The Markdown chapter is the editorial source; the design proof is a selected-page prototype and must be reconciled with later editorial changes.
+
+The PDF was rendered and preflighted for A4 page size, seven pages, no out-of-page text bounds, and core pitch labels including E♭, G♭, B♭ and F♯. This is not a final proof for publication: reader testing, aural examples, editorial approval and thorough accessibility review remain necessary.
+
+**Reproducibility note:** the local build script produces a derived design proof; it does not yet compile directly from CHAPTER.md. That single-source workflow should be built before scaling to the full book.
