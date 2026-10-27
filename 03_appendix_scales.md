@@ -123,15 +123,15 @@
 
 | Root | Degree formula | Notes |
 | --- | --- | --- |
-| C | 1 2 3 #4 #5 b7 | C D E F# G# A# |
-| Db | 1 2 3 #4 #5 b7 | Db Eb F G A B |
-| D | 1 2 3 #4 #5 b7 | D E F# G# A# B# |
-| Eb | 1 2 3 #4 #5 b7 | Eb F G A B C# |
-| E | 1 2 3 #4 #5 b7 | E F# G# A# B# C## |
-| F | 1 2 3 #4 #5 b7 | F G A B C# D# |
-| F# | 1 2 3 #4 #5 b7 | F# G# A# B# C## D## |
-| G | 1 2 3 #4 #5 b7 | G A B C# D# E# |
-| Ab | 1 2 3 #4 #5 b7 | Ab Bb C D E F# |
-| A | 1 2 3 #4 #5 b7 | A B C# D# E# F## |
-| Bb | 1 2 3 #4 #5 b7 | Bb C D E F# G# |
-| B | 1 2 3 #4 #5 b7 | B C# D# E# F## G## |
+| C | 1 2 3 #4 #5 b7 | C D E F# G# Bb |
+| Db | 1 2 3 #4 #5 b7 | Db Eb F G A Cb |
+| D | 1 2 3 #4 #5 b7 | D E F# G# A# C |
+| Eb | 1 2 3 #4 #5 b7 | Eb F G A B Db |
+| E | 1 2 3 #4 #5 b7 | E F# G# A# B# D |
+| F | 1 2 3 #4 #5 b7 | F G A B C# Eb |
+| F# | 1 2 3 #4 #5 b7 | F# G# A# B# C## E |
+| G | 1 2 3 #4 #5 b7 | G A B C# D# F |
+| Ab | 1 2 3 #4 #5 b7 | Ab Bb C D E Gb |
+| A | 1 2 3 #4 #5 b7 | A B C# D# E# G |
+| Bb | 1 2 3 #4 #5 b7 | Bb C D E F# Ab |
+| B | 1 2 3 #4 #5 b7 | B C# D# E# F## A |

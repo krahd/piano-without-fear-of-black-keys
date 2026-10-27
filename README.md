@@ -12,29 +12,36 @@ Convenience source files:
 
 `assets/` contains original vector teaching diagrams. `style.css` controls the PDF export.
 
-**Current public PDF (v1.3.1):** [`Piano_Without_Fear_of_Black_Keys.pdf`](Piano_Without_Fear_of_Black_Keys.pdf). This stable filename is linked from laurenzo.net.
+**Current public PDF (v1.3.2 after author-review merge):** [`Piano_Without_Fear_of_Black_Keys.pdf`](Piano_Without_Fear_of_Black_Keys.pdf). This stable filename is linked from laurenzo.net.
 
 Version 1.3 changes: register is now an explicit layer between pitch spelling and instrument geometry; movable-shape pedagogy is counterbalanced by fixed-register drills for guitar/Push/Note; ASCII transformation arrows are replaced by typographic arrows; typography and table spacing are refined.
 
 Version 1.2 changes: author/contact on the cover; compact preface with reading paths, first-ten-minutes exercise, symbol guide, and beginner glossary; local decoding of chord symbols and Roman-numeral progressions; small language simplifications for first-time musicians. The theoretical scope and practice architecture are otherwise unchanged.
 
 
+## Maintenance candidate: v1.3.2
+
+Prepared for authorial review under issue #10. Only the twelve whole-tone flat-seventh spellings change in the manuscript; pitches are unchanged. The review branch contains the candidate at the stable public filename. It becomes public only when the author approves and merges the pull request.
+
+Run `python3 -m unittest discover -s tests -v` to check all 180 scale rows and 108 chord-family cells in Appendices A-C. The maintenance build runs these checks before rendering. See [review and release notes](edition-design/v1.3.2/README.md).
+
 ## Editions
 
-- **v1.3.1 (current, 53 pages, 160 × 230 mm):** [stable public PDF](Piano_Without_Fear_of_Black_Keys.pdf), with an [identical explicitly versioned PDF](edition-design/v1.3.1/Piano_Without_Fear_of_Black_Keys_v1.3.1.pdf). The original instructional content and SVG teaching diagrams are retained; the book is retypeset with 10 pt Noto Serif and mirrored binding margins. See [edition notes](edition-design/v1.3.1/README.md).
-- **v1.3 (archived A4 original):** [historical PDF](edition-design/v1.3/Piano_Without_Fear_of_Black_Keys_v1.3.pdf). Its canonical manuscript `piano_transposition_manual.md` and historical stylesheet `style.css` remain unchanged. The [v1.3 build script](edition-design/v1.3/build.sh) remains available.
+- **v1.3.2 (maintenance candidate, 53 pages, 160 × 230 mm):** [review PDF](edition-design/v1.3.2/Piano_Without_Fear_of_Black_Keys_v1.3.2.pdf), using the unchanged v1.3.1 CSS and original SVGs.
+- **v1.3.1 (archived upon approval, 53 pages, 160 × 230 mm):** [historical versioned PDF](edition-design/v1.3.1/Piano_Without_Fear_of_Black_Keys_v1.3.1.pdf). The original instructional content and SVG teaching diagrams are retained; the book is retypeset with 10 pt Noto Serif and mirrored binding margins. See [edition notes](edition-design/v1.3.1/README.md).
+- **v1.3 (archived A4 original):** [historical PDF](edition-design/v1.3/Piano_Without_Fear_of_Black_Keys_v1.3.pdf). The historical stylesheet `style.css` remains unchanged; the canonical manuscript now includes the maintenance errata. The [v1.3 build script](edition-design/v1.3/build.sh) remains available.
 
 The term *transposition-first* and the book's overall pedagogical framing are reserved for reconsideration in [v1.4](https://github.com/krahd/piano-without-fear-of-black-keys/issues/5).
 
 ## Build
 
-To reproduce **the current public v1.3.1 PDF** at the stable root filename, run from the repository root:
+To reproduce **the v1.3.2 maintenance PDF** at the stable root filename, run from the repository root:
 
 ```sh
 ./build.sh
 ```
 
-This invokes `edition-design/v1.3.1/build.py` and copies the resulting versioned PDF to `Piano_Without_Fear_of_Black_Keys.pdf`. Requirements: Python 3 with BeautifulSoup4 and WeasyPrint, Pandoc, and the documented book fonts. The old v1.3 build is separate: `sh edition-design/v1.3/build.sh`; it writes only to the archived versioned PDF, not the public filename.
+This invokes `edition-design/v1.3.2/build.py` and copies the resulting versioned PDF to `Piano_Without_Fear_of_Black_Keys.pdf`. Requirements: Python 3 with BeautifulSoup4 and WeasyPrint, Pandoc, and the documented book fonts. The old v1.3 build is separate: `sh edition-design/v1.3/build.sh`; it writes only to the archived versioned PDF, not the public filename.
 
 ## Editorial work
 

@@ -1,0 +1,69 @@
+/* Piano Without Fear of Black Keys -- Version 1.3.1 book typesetting */
+:root { --ink:#222a29; --muted:#67716f; --accent:#a15f45; --rule:#c8c4bb; --soft:#f7f7f3; }
+@page {
+  size:160mm 230mm;
+  margin-top:22mm; margin-bottom:24mm;
+  @bottom-center { content:counter(page); font:8pt 'Lato', sans-serif; color:#777d7a; }
+}
+@page :left { margin-left:20mm; margin-right:24mm; }
+@page :right { margin-left:24mm; margin-right:20mm; }
+@page :first { margin:0; @bottom-center{ content:none; } }
+* {box-sizing:border-box;}
+html,body {margin:0; padding:0; background:#fff; color:var(--ink)}
+body { font:10pt/1.43 'Noto Serif', Georgia, serif; hyphens:none; font-kerning:normal; }
+p {margin:0 0 .78em; orphans:3; widows:3;}
+strong{font-weight:700} a{color:#35584f;text-decoration:none}
+h1,h2,h3,h4 {font-family:'Lato',Arial,sans-serif; line-height:1.22; color:#26332f; break-after:avoid-page; page-break-after:avoid; font-weight:700; }
+h1 {font-size:20pt; margin:1.22em 0 .55em; padding:0 0 .27em; border-bottom:.8pt solid var(--rule);}
+h2 {font-size:13.4pt; margin:1.28em 0 .51em;}
+h3 {font-size:11.1pt; margin:1.1em 0 .42em;}
+h4 {font-size:10pt; margin:1em 0 .35em;}
+h1 + h2 {margin-top:.65em;}
+ul,ol {margin:.32em 0 .8em; padding-left:5.3mm}
+li {margin:.12em 0;padding-left:.75mm;}
+li p {margin:0 0 .36em}
+blockquote,.practice-note {font:9.6pt/1.45 'Noto Serif',Georgia,serif; border-left:1.7pt solid var(--accent);padding:.45em 0 .45em 3.2mm;margin:.85em 0 1em; break-inside:avoid-page;page-break-inside:avoid;}
+blockquote {border-color:#657f76}
+blockquote p:last-child,.practice-note p:last-child {margin-bottom:0}
+code {font:8.8pt/1.4 'DejaVu Sans Mono',monospace;color:#263b38;white-space:normal; background:transparent; overflow-wrap:anywhere}
+pre{white-space:pre-wrap;overflow-wrap:anywhere}
+pre code{font-size:8.7pt}
+hr{border:0;border-top:.55pt solid var(--rule);margin:1.2em 0}
+/* Tables: book rules, minimal framing, adequate internal space. */
+table{width:100%;border-collapse:collapse;border-spacing:0;table-layout:auto; font:8.35pt/1.32 'Lato',Arial,sans-serif; margin:.66em 0 1.12em;}
+thead{display:table-header-group;}
+tr{break-inside:avoid-page;page-break-inside:avoid;}
+th,td {vertical-align:top;text-align:left;padding:1.45mm 1.35mm 1.4mm 1.2mm;border:0;border-bottom:.35pt solid #d7d4cc;overflow-wrap:anywhere;}
+th {font-weight:700;color:#233a33;border-top:.9pt solid #576d62;border-bottom:.7pt solid #576d62;}
+table.wide{font-size:7.8pt;line-height:1.3}
+table.wide th,table.wide td{padding:1.2mm .8mm}
+table.glossary{font-size:7.6pt}
+table.glossary td:nth-child(odd),table.glossary th:nth-child(odd){width:13%;font-weight:700}
+table.glossary td:nth-child(even),table.glossary th:nth-child(even){width:37%}
+/* The original teaching illustrations remain unaltered vector assets. */
+figure {margin:.9em 0 1.0em;text-align:center; break-inside:avoid-page; page-break-inside:avoid;}
+figure img,p>img {display:block; max-width:100%; max-height:112mm; width:auto; height:auto; margin:.45em auto; object-fit:contain;}
+figure figcaption {color:var(--muted);font:8pt/1.36 'Lato',sans-serif;margin-top:.2em}
+img[src*="circle_fifths"],img[src*="circle_thirds"],img[src*="negative_harmony_axis"] {max-width:88%; max-height:93mm;}
+img[src*="piano_"]{max-width:96%;max-height:67mm;}
+img[src*="push_"]{max-width:95%;max-height:87mm;}
+img[src*="note_"]{max-width:96%;max-height:75mm;}
+img[src*="third_cycles"]{max-width:93%;max-height:90mm}
+img[src*="transposition_pipeline"]{max-width:100%;max-height:55mm}
+img[src*="voice_leading"]{max-width:100%;max-height:82mm}
+.pagebreak {break-before:page;page-break-before:always;height:0;font-size:0;}
+/* Cover: one page, no false extra HTML title page; all original words retained. */
+.cover {position:relative; width:160mm; height:230mm; padding:40mm 20mm 20mm 20mm; background:#f8f7f3; color:#1d2927; page-break-after:always;break-after:page;}
+.cover-title {font:700 33pt/1.09 'Noto Serif', Georgia,serif;letter-spacing:-.038em;color:#1b2825;margin:0 0 0; padding:0 0 10mm; border:0;max-width:119mm;}
+.cover-title:after{content:'';display:block;width:20mm;height:1.3pt;background:var(--accent);margin-top:8mm;}
+.cover-subtitle{font:12pt/1.42 'Lato',Arial,sans-serif; color:#49504d;max-width:121mm; margin:3mm 0 0;}
+.cover-author-block{position:absolute;bottom:44mm;left:20mm;}
+.cover-author{font:700 12pt 'Lato',Arial,sans-serif;margin:0 0 1mm;}
+.cover-contact{font:8.2pt 'Lato',Arial,sans-serif;color:#616864;margin:0;}
+.cover-version{position:absolute;bottom:29mm;left:20mm;color:#68736f;font:8.4pt 'Lato',Arial,sans-serif;margin:0;}
+.cover-note{position:absolute; bottom:14mm;left:20mm;right:20mm;color:#59605d;font:7.1pt/1.25 'Lato',Arial,sans-serif;}
+.cover-tagline{position:absolute; bottom:6.5mm;left:20mm;right:20mm;color:#5c6a65;font:7.2pt 'Lato',Arial,sans-serif;}
+/* Keep a subtle heading ladder on the content pages. */
+h1[id^="part-"]{font-size:17.5pt;border-top:.8pt solid var(--accent);border-bottom:0;padding-top:3.4mm;margin-top:1.8em;}
+h1[id^="appendix-"] {font-size:17pt;border-top:.8pt solid var(--accent);border-bottom:0;padding-top:3mm;}
+@media print { body{orphans:3;widows:3} }
