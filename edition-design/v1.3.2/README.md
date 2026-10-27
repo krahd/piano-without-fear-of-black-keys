@@ -1,12 +1,12 @@
-# v1.3.2 maintenance candidate
+# v1.3.2 maintenance edition
 
-Prepared 27 October 2026 for authorial review under issue #10. Not a published release until the author approves and merges the review PR.
+Author approved publication with “Merge to main. Keep the filename”. PR #11 merged as `a0d1686073623c8b34adca9c4712e1ef53a807a7`. Main-branch root and versioned PDFs independently verified to share blob `b90140c53628cdc4a685503b72836a1e1947d6c8`; historical PDF blobs remain unchanged.
 
 ## Scope
 
 Only the last note of each of the twelve Appendix B whole-tone rows changes, from raised sixth spelling to the stated flat seventh. Sounding pitches and formula `1 2 3 #4 #5 b7` are preserved. `03_appendix_scales.md` is synchronised. No other manuscript prose, examples, pedagogy, SVG assets or successor-book files change.
 
-The build is derived from v1.3.1/build.py, with edition/output names advanced to v1.3.2 and regression checks run before rendering. `book.css` is byte-identical to v1.3.1. The original v1.3 and v1.3.1 PDFs and build files are untouched. The root build now produces this maintenance candidate at the unchanged public filename `Piano_Without_Fear_of_Black_Keys.pdf`; the review branch does not change the public main-branch file until merge.
+The build is derived from v1.3.1/build.py, with edition/output names advanced to v1.3.2 and regression checks run before rendering. `book.css` is byte-identical to v1.3.1. The original v1.3 and v1.3.1 PDFs and build files are untouched. The root build now produces this maintenance edition at the unchanged public filename `Piano_Without_Fear_of_Black_Keys.pdf`; the review branch does not change the public main-branch file until merge.
 
 ## Build and checks
 
@@ -38,7 +38,7 @@ Running the checker against the parent manuscript reproduces exactly twelve lett
 - Unchanged stylesheet: `06a2f25fd7a2f51948e890f55d1eff3b1d4393eb8b11b33efd4a520b91870596`
 - Historical v1.3.1 PDF: `f8726d53fad0757bac8a65de91f0f58d56619cb31cfc3cdc4eeca6d204d26359`
 
-## Author-review and release handoff
+## Author-review and release handoff (completed)
 
 1. Review the twelve-line canonical diff, mirrored convenience-source changes, passing checks, and candidate PDF, particularly pp. 43-44.
 2. Author approval is required before merge, as stated in issue #10: “Publish improvements incrementally after authorial review; old release stays archived.”
