@@ -51,3 +51,7 @@ Verified current GitHub `main` already contains the complete standalone v1.3 boo
 ## 2026-09-21 — canonical completion verification
 
 Verified current GitHub `main` already contains the complete standalone v1.3 book. Fresh `./build.sh` succeeded with WeasyPrint 70.0 and produced a 37-page A4 PDF. Confirmed 16 unique manuscript SVG references, 16 SVG assets, the four-layer model, absence of the stale three-layer formulation, and clean `git diff --check`. The previous 38-page expectation was superseded by the reproducible current 37-page build. Project state set to COMPLETE.
+
+## 27 October 2026 - Whole-tone maintenance candidate
+
+Corrected twelve Appendix B final-note spellings and synchronised the convenience scale file. Added degree-letter/pitch-class regressions (204 physical rows, 288 scale/chord sequences), CI, and a fail-fast v1.3.2 build retaining the exact v1.3.1 CSS and all diagrams. Built and reviewed the 53-page PDF; only cover and pp. 43-44 differ in extracted text. Historical PDFs remain unchanged. Authorial review is pending before public main-branch replacement. See edition-design/v1.3.2/README.md.
