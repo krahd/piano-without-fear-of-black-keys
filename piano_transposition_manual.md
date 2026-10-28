@@ -43,13 +43,13 @@ On D, that becomes:
 
 `D F A C`
 
-That spelling still does not tell you *which* D, F, A, and C. A concrete voicing might be `D3 F3 A3 C4`; another might place the same chord an octave higher. The pitch classes and harmonic function are the same, but the sounding pitches and physical locations are not.
+That spelling still does not tell you *which* D, F, A, and C. A concrete voicing might be `D3 F3 A3 C4`; another might place the same chord an octave higher. The chord-tone formula is the same, but the sounding pitches and physical locations are not.
 
 On piano, guitar, Push, or Note, those pitches occupy different physical places. When an exercise feels difficult, move backward through the chain: say the formula, spell the pitch classes, choose the register, then find those exact pitches on the instrument.
 
-Roman numerals describe **chords by scale degree**. Uppercase normally means major; lowercase means minor. Thus `ii-V-I` in C major means `Dm-G-C`. A flat or sharp before a Roman numeral alters that chord root relative to the reference scale: `bVI` means a chord rooted on the lowered sixth degree.
+Roman numerals describe **chords by scale degree in a key** (harmonic context), whereas `1 b3 5 b7` describes the interval structure of one chord relative to its root. Uppercase normally means major; lowercase means minor. Thus `ii-V-I` in C major means `Dm-G-C`. A flat or sharp before a Roman numeral alters that chord root relative to the reference scale: `bVI` means a chord rooted on the lowered sixth degree.
 
-<div class="practice-note"><strong>Symbols at a glance.</strong> <code>#</code> = sharp (one semitone higher); <code>b</code> = flat (one semitone lower); <code>m</code> = minor; <code>maj</code> = major; <code>dim</code> or <code>°</code> = diminished. Finger numbers run from <code>1</code> (thumb) to <code>5</code> (little finger).</div>
+<div class="practice-note"><strong>Symbols at a glance.</strong> <code>#</code> = sharp (one semitone higher); <code>b</code> = flat (one semitone lower); <code>m</code> = minor; <code>maj</code> = major; <code>dim</code> or <code>°</code> = diminished. Double accidentals count twice: <code>Bbb</code> sounds on the A key and <code>C##</code> on the D key. Finger numbers run from <code>1</code> (thumb) to <code>5</code> (little finger).</div>
 
 <div class="pagebreak"></div>
 
@@ -127,7 +127,7 @@ A piano makes this cycle visually uneven: seven white-note names and five black 
 4. Repeat for F: it is immediately left of each group of three black keys.
 5. Close your eyes, move your hand, reopen, and orient yourself from the black-key groups.
 
-**Success criterion:** you can identify C and F anywhere on the keyboard in under two seconds.
+**Success criterion:** you can identify C and F anywhere on the keyboard without counting; work towards two seconds without sacrificing accuracy.
 
 ## 2. Intervals are distances
 
@@ -192,15 +192,15 @@ On piano, the same interval formula produces different visible shapes in differe
 
 ![Dbmaj7](assets/piano_dbmaj7.svg)
 
-Both are `1 3 5 7`. The musical object is identical; only its keyboard realization changes.
+Both use `1 3 5 7`. The chord formula is unchanged; the sounding pitches and keyboard geometry are not.
 
 ## 5. Push: chromatic fourths as an isomorphic reference
 
-For this manual, **Push is always treated in Chromatic mode**, never in a In-Key layout. Use the fourths layout unless an exercise explicitly says otherwise. In the common 12-tone chromatic fourths geometry, moving one pad to the right is one semitone and moving one pad upward is five semitones (a perfect fourth). A key/scale selection may still be useful for lighting scale tones, but pitches outside the scale remain physically present.
+For this manual, **Push is always treated in Chromatic mode**, never in an In-Key layout. Use the fourths layout unless an exercise explicitly says otherwise. In the common 12-tone chromatic fourths geometry, moving one pad to the right is one semitone and moving one pad upward is five semitones (a perfect fourth). A key/scale selection may still be useful for lighting scale tones, but pitches outside the scale remain physically present. With **Fixed ON**, the same pad keeps its pitch when you change the selected key; use this setting when only changing the scale highlighting. With **Fixed OFF**, the grid shifts so the bottom-left pad follows the selected root; the same relative fingering then produces different pitches.
 
 ![Push C major reference in Chromatic mode](assets/push_c_major.svg)
 
-Now change the reference scale to F# Dorian **while remaining in Chromatic mode**. The important thing is that the pitch geometry stays chromatic while the visual emphasis changes.
+With **Fixed ON**, change the reference scale to F# Dorian while remaining in Chromatic mode: the played pitches stay in place and the highlighted scale tones change. To transpose a shape by changing the selected root instead, switch **Fixed OFF**. The fourths layout retains its interval geometry in either case.
 
 ![Push F# Dorian reference in Chromatic mode](assets/push_fs_dorian.svg)
 
@@ -325,6 +325,8 @@ If C major, A minor, and D Dorian are your default universe, they all use the sa
 For each, alternate between:
 
 `scale → triad → seventh chord → arpeggio → 2-bar improvisation`
+
+For an aural check, sustain a D-minor chord or D pedal. Compare D Aeolian (`D E F G A Bb C`) with D Dorian (`D E F G A B C`) using the same short melody, changing only Bb to B. Keep D as the tonic; then transpose this comparison to E, where the contrasting sixths are C and C#. The test is whether you can hear, name and play that one changed degree without changing the tonal centre.
 
 ## 10. Common non-diatonic scales
 
@@ -514,7 +516,18 @@ Move the function to Bb minor:
 
 `Bbm - Gb - Db - Ab`
 
-The formula survives unchanged.
+The formula survives unchanged. In a concrete piano voicing, choose the following source pitches and transpose **each sounding pitch up one semitone**. The chord labels and Roman numerals alone do not specify the voicing.
+
+| Original chord | Source voicing | Target chord | Target voicing |
+| --- | --- | --- | --- |
+| Am | `A3 C4 E4` | Bbm | `Bb3 Db4 F4` |
+| F | `A3 C4 F4` | Gb | `Bb3 Db4 Gb4` |
+| C | `G3 C4 E4` | Db | `Ab3 Db4 F4` |
+| G | `G3 B3 D4` | Ab | `Ab3 C4 Eb4` |
+
+These are deliberately close voicings, not four successive root-position triads. The F and C chords use inversions; the transposed versions retain the corresponding bass notes and the entire contour. On piano, locate each target pitch by its name and octave, not by copying the earlier fingering. For example, `E4 → F4` crosses adjacent white keys while `C4 → Db4` moves to a black key. Keep the given registers when you practise the example.
+
+**Check:** Return to A minor and transpose the four voiced chords *down* one semitone to Ab minor. Write the twelve sounding target pitches (including octaves) before playing; then verify them on piano. This is a literal note-for-note transposition, not merely a substitution of chord symbols.
 
 ### Exercise 8 - Functional progression through all 12 roots
 
@@ -551,18 +564,18 @@ Use the isomorphic controller as the abstract reference and piano as the concret
 
 ### Exercise 9 - Controller-to-piano translation loop
 
-1. Select a reference key and mode on Push or Note, but keep Push in **Chromatic** mode and Note **In Key OFF**.
-2. Play a 3- or 4-note chord shape.
-3. Name its degrees relative to the root.
-4. Change the reference key on the controller while keeping the chromatic/fourths geometry available.
-5. Say the new note names.
-6. Reproduce them on piano.
-7. Repeat in a key with several black notes.
+1. Select D Dorian. On Push choose **Chromatic / Fourths / Fixed OFF**; on Note choose **Fourths / In Key OFF**.
+2. Play a 3- or 4-note shape, and spell its sounding pitches and degrees from D.
+3. On Push, keep the shape and select F# Dorian: Fixed OFF shifts the pitch assignment so the selected root remains at the bottom-left. On Note, changing the key with In Key OFF does **not** transpose the existing pads; move the shape to a new F# root yourself.
+4. Verify the new pitches by ear or note display, not just by pad illumination. Say the target notes before playing them on piano.
+5. Repeat with a black-key root and then with Push Fixed ON to confirm that key selection *alone* no longer transposes the sounding pad pitches.
 
 Example:
 
 - D Dorian degrees: `1 b3 5 b7` → `D F A C`
 - F# Dorian same degrees → `F# A C# E`
+
+For these four chord tones, a simple piano check is `D3 F3 A3 C4` → `F#3 A3 C#4 E4`. Here the chosen voicing stays ordered in thirds while its absolute positions change. Do not interpret Note's scale-highlight setting as pitch transposition.
 
 ## 19. Transposition between guitar and piano
 
@@ -589,12 +602,12 @@ This converts geometric guitar intuition into harmonic-function and pitch-locati
 
 | Time | Task | Rule |
 | ---: | --- | --- |
-| 5 min | One scale/mode in all 12 roots | Say degrees and note names |
-| 5 min | One chord quality in all 12 roots | Root position + inversions |
+| 5 min | One scale/mode in selected roots | Say degrees and note names |
+| 5 min | One chord quality in selected roots | Root position, then inversions |
 | 5 min | Arpeggiate the same chord | Slow, even, relaxed |
-| 5 min | One real progression in all 12 roots | Functional analysis first |
+| 5 min | One short progression in selected roots | Functional analysis first |
 
-Start the session in a non-white-key tonic such as Db, Eb, F#, or Ab at least half the time.
+**Choose the workload by accuracy:** begin with three roots per block; use six once you can name and play each without correction; twelve is an advanced benchmark rather than the default. Five minutes divided by twelve allows only 25 seconds per root. Repeat a troublesome key next session instead of racing through it. Start in Db, Eb, F# or Ab at least half the time, and only add tempo after three error-free repetitions.
 
 ## 21. Eight-week curriculum - beginner track
 
@@ -610,10 +623,10 @@ Start the session in a non-white-key tonic such as Db, Eb, F#, or Ab at least ha
 - Build `1 3 5` and `1 b3 5` from each tonic.
 - Hear major vs minor quality.
 
-### Week 3 - All major keys, slowly
-- Add A, E, B, Db, Gb, Ab, Eb, Bb.
+### Week 3 - Extend major-key coverage, slowly
+- Add A, E, B and Db; continue introducing Gb, Ab, Eb and Bb in later weeks as accuracy permits.
 - One octave only.
-- Say notes before playing.
+- Say notes before playing; do not advance after repeated errors.
 
 ### Week 4 - Seventh chords
 - maj7, 7, m7.
@@ -638,7 +651,7 @@ Start the session in a non-white-key tonic such as Db, Eb, F#, or Ab at least ha
 ### Week 8 - Transpose actual music
 - Choose two songs/progressions.
 - Analyze degrees.
-- Play in at least six keys, then all twelve.
+- Play in three keys accurately, work towards six, then treat all twelve as a further challenge.
 - Record one version on piano and one on Push/Note.
 
 ## 22. Eight-week curriculum - experienced guitarist / producer track

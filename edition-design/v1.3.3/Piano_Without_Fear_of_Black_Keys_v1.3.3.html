@@ -1,0 +1,3380 @@
+<!DOCTYPE html>
+
+<html lang="en-GB" xml:lang="en-GB" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8"/>
+<meta content="pandoc 3.12.1" name="generator"/>
+<meta content="width=device-width, initial-scale=1.0, user-scalable=yes" name="viewport"/>
+
+<title>Piano Without Fear of Black Keys</title>
+<style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      color: light-dark(#1a1a1a, #fdfdfd);
+      background-color: #fdfdfd;
+      background-color: light-dark(#fdfdfd, #1a1a1a);
+      color-scheme: light dark;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        color-scheme: light only;
+      }
+      html, body, pre, code {
+        background-color: transparent;
+      }
+      body, a, a:visited, blockquote {
+        color: black;
+      }
+      pre, code {
+        padding: 0;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a, a:visited {
+      color: inherit;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid;
+      border-color: #e6e6e6;
+      border-color: light-dark(#e6e6e6, #4c4c4c);
+      color: #606060;
+      color: light-dark(#606060, #b6b6b6);
+    }
+    code {
+      white-space: pre-wrap;
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid currentColor;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid currentColor;
+      border-bottom: 1px solid currentColor;
+    }
+    th {
+      border-top: 1px solid currentColor;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: 1.5em;}
+    div.column{flex: auto;}
+    @media screen {
+    div.columns{gap: min(4vw, 1.5em);}
+    div.column{overflow-x: auto;}
+    }
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+<meta content="Tomas Laurenzo" name="author"/><meta content="A transposition-first manual for piano, Ableton Push and Note, and guitar" name="description"/><link href="book.css" rel="stylesheet"/></head>
+<body>
+
+<section class="cover">
+<h1 class="cover-title">
+Piano<br/>Without Fear<br/>of Black Keys
+</h1>
+<p class="cover-subtitle">
+A transposition-first manual<br/>for piano,<br/>Ableton Push and
+Note,<br/>and guitar
+</p>
+<div class="cover-author-block">
+<p class="cover-author">
+Tomas Laurenzo
+</p>
+<p class="cover-contact">
+<a href="mailto:tomas@laurenzo.net">tomas@laurenzo.net</a> ·
+<a href="https://laurenzo.net">laurenzo.net</a>
+</p>
+</div>
+<p class="cover-version">
+Version 1.3.3 · October 2026
+</p>
+<div class="cover-note">
+<p>For two readers at once: an absolute beginner who needs music from
+first principles, and an experienced guitarist/electronic musician who
+wants piano harmony to become transposable rather than trapped in C
+major / A minor / D Dorian.</p>
+</div>
+<p class="cover-tagline">
+Function → pitch spelling → register → instrument geometry
+</p>
+</section>
+
+<h2 id="preface">Preface</h2>
+<p>This is not a general piano method. It has a narrower goal: make
+<strong>scales, chords, arpeggios, voicings, and progressions
+transposable</strong> on a keyboard whose physical geometry changes from
+key to key. It starts from first principles so a new musician can use
+it, but everything points back to that goal.</p>
+<p>You do <strong>not</strong> need to read staff notation, have perfect
+pitch, memorize every key signature, or already know piano fingering.
+You need a keyboard or piano, a few minutes of focused practice, and the
+willingness to say note names and interval formulas before speed becomes
+important.</p>
+<h3 id="two-ways-through-the-book">Two ways through the book</h3>
+<table class="wide">
+<colgroup>
+<col style="width: 25%"/>
+<col style="width: 25%"/>
+<col style="width: 25%"/>
+<col style="width: 25%"/>
+</colgroup>
+<thead>
+<tr>
+<th>Reader</th>
+<th>Start here</th>
+<th>Main route</th>
+<th>Use as reference</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Absolute beginner</strong></td>
+<td>Preface, then Part I</td>
+<td>Parts I-IV, then the beginner program in Part VI</td>
+<td>Part VII and Appendices A-E when an exercise asks for them</td>
+</tr>
+<tr>
+<td><strong>Guitar / Push / Note player</strong></td>
+<td>Skim Part I</td>
+<td>Parts III-VI, translating every object onto piano</td>
+<td>Part VII and the all-key appendices</td>
+</tr>
+</tbody>
+</table>
+<p>Appendix F (negative harmony) is optional. Appendix G documents
+sources and product-layout details. Neither is required for the main
+learning path.</p>
+<h3 id="how-to-read-every-musical-example">How to read every musical
+example</h3>
+<p>The book uses the same four-layer translation throughout:</p>
+<p><code>function → pitch spelling → register → instrument geometry</code></p>
+<p>For example, a minor seventh chord is always:</p>
+<p><code>1 b3 5 b7</code></p>
+<div class="keep-example"><p>On D, that becomes:</p><p><code>D F A C</code></p></div>
+
+<p>That spelling still does not tell you <em>which</em> D, F, A, and C.
+A concrete voicing might be <code>D3 F3 A3 C4</code>; another might
+place the same chord an octave higher. The chord-tone formula is the
+same, but the sounding pitches and physical locations are not.</p>
+<p>On piano, guitar, Push, or Note, those pitches occupy different
+physical places. When an exercise feels difficult, move backward through
+the chain: say the formula, spell the pitch classes, choose the
+register, then find those exact pitches on the instrument.</p>
+<p>Roman numerals describe <strong>chords by scale degree in a
+key</strong> (harmonic context), whereas <code>1 b3 5 b7</code>
+describes the interval structure of one chord relative to its root.
+Uppercase normally means major; lowercase means minor. Thus
+<code>ii-V-I</code> in C major means <code>Dm-G-C</code>. A flat or
+sharp before a Roman numeral alters that chord root relative to the
+reference scale: <code>bVI</code> means a chord rooted on the lowered
+sixth degree.</p>
+<div class="practice-note">
+<strong>Symbols at a glance.</strong> <code>#</code> = sharp (one
+semitone higher); <code>b</code> = flat (one semitone lower);
+<code>m</code> = minor; <code>maj</code> = major; <code>dim</code> or
+<code>°</code> = diminished. Double accidentals count twice:
+<code>Bbb</code> sounds on the A key and <code>C##</code> on the D key.
+Finger numbers run from <code>1</code> (thumb) to <code>5</code> (little
+finger).
+</div>
+<div class="pagebreak">
+</div>
+<h3 id="your-first-ten-minutes">Your first ten minutes</h3>
+<ol type="1">
+<li>Find C: it is the white key immediately to the left of every group
+of two black keys.</li>
+<li>Play <code>C D E F G</code> slowly and say the letter names.</li>
+<li>Play <code>C E G</code> and say <code>1 3 5</code>: this is a C
+major triad.</li>
+<li>Play <code>C Eb G</code> and say <code>1 b3 5</code>: this is a C
+minor triad.</li>
+<li>Move the same two formulas to D: <code>D F# A</code> and
+<code>D F A</code>. Do not copy the C hand shape; rebuild the
+formulas.</li>
+</ol>
+<p>That last step is the entire book in miniature: <strong>the musical
+object stays invariant while the piano geometry changes</strong>.</p>
+<h3 id="quick-glossary">Quick glossary</h3>
+<table class="glossary wide">
+<thead><tr><th>Term</th><th>Meaning</th></tr></thead>
+<tbody>
+<tr>
+<td>
+<strong>Pitch</strong>
+</td>
+<td>
+How high or low a sound is.
+</td>
+
+
+</tr><tr><td>
+<strong>Note</strong>
+</td><td>
+A named pitch, such as C, F#, or Bb.
+</td></tr>
+<tr>
+<td>
+<strong>Semitone</strong>
+</td>
+<td>
+The smallest step on a piano; one adjacent key.
+</td>
+
+
+</tr><tr><td>
+<strong>Octave</strong>
+</td><td>
+Twelve semitones; the same note name at a higher or lower register.
+</td></tr>
+<tr>
+<td>
+<strong>Key</strong>
+</td>
+<td>
+A tonal center plus the pitch relationships organized around it.
+</td>
+
+
+</tr><tr><td>
+<strong>Tonic</strong>
+</td><td>
+Scale degree 1: the tonal home of a key or mode.
+</td></tr>
+<tr>
+<td>
+<strong>Root</strong>
+</td>
+<td>
+The note that names and organizes a chord.
+</td>
+
+
+</tr><tr><td>
+<strong>Interval</strong>
+</td><td>
+The distance between two pitches.
+</td></tr>
+<tr>
+<td>
+<strong>Scale degree</strong>
+</td>
+<td>
+A note’s numbered function inside a scale: 1, 2, 3, etc.
+</td>
+
+
+</tr><tr><td>
+<strong>Scale</strong>
+</td><td>
+An ordered collection of pitches around a tonic.
+</td></tr>
+<tr>
+<td>
+<strong>Mode</strong>
+</td>
+<td>
+A scale pattern understood through a particular tonic and interval
+structure.
+</td>
+
+
+</tr><tr><td>
+<strong>Chromatic</strong>
+</td><td>
+Using all twelve semitone positions rather than only one scale.
+</td></tr>
+<tr>
+<td>
+<strong>Diatonic</strong>
+</td>
+<td>
+Belonging to the notes/chords generated by a seven-note key or mode.
+</td>
+
+
+</tr><tr><td>
+<strong>Enharmonic</strong>
+</td><td>
+Different spellings for the same piano key, such as C# and Db.
+</td></tr>
+<tr>
+<td>
+<strong>Chord</strong>
+</td>
+<td>
+Several pitches heard as one harmonic object.
+</td>
+
+
+</tr><tr><td>
+<strong>Triad</strong>
+</td><td>
+A three-note chord built from root, third, and fifth.
+</td></tr>
+<tr>
+<td>
+<strong>Inversion</strong>
+</td>
+<td>
+A chord reordered so a note other than the root is lowest.
+</td>
+
+
+</tr><tr><td>
+<strong>Voicing</strong>
+</td><td>
+The particular register, spacing, and ordering of chord tones.
+</td></tr>
+<tr>
+<td>
+<strong>Arpeggio</strong>
+</td>
+<td>
+A chord played as successive notes rather than simultaneously.
+</td>
+
+
+</tr><tr><td>
+<strong>Transposition</strong>
+</td><td>
+Moving a musical structure to a new pitch level while preserving its
+relationships.
+</td></tr>
+<tr>
+<td>
+<strong>Voice leading</strong>
+</td>
+<td>
+How individual notes move from one chord to the next.
+</td>
+
+
+</tr><tr><td>
+<strong>Isomorphic</strong>
+</td><td>
+A layout where a given interval keeps the same physical shape after
+transposition.
+</td></tr>
+<tr>
+<td>
+<strong>Register</strong>
+</td>
+<td>
+The region of pitch space in which notes sound.
+</td>
+
+
+</tr><tr><td>
+<strong>Scientific pitch notation</strong>
+</td><td>
+The octave-number convention used in this book: middle C is C4, and the
+octave number changes at C. Some software labels the same pitches with
+different octave numbers.
+</td></tr>
+</tbody>
+</table>
+<div class="practice-note">
+<strong>Diagram convention.</strong> Copper marks the tonic/root; teal
+marks selected chord or scale tones; normal white/black or pale
+controller pads remain available pitches. Color is an annotation, not a
+different tuning system.
+</div>
+<div class="pagebreak">
+</div>
+<h2 id="contents">Contents</h2>
+<ol class="toc-list" type="1">
+<li><a href="#preface">Preface - how to read the book and quick glossary</a></li>
+<li><a href="#part-i---music-from-first-principles">Music from first principles</a></li>
+<li><a href="#part-ii---three-geometries-for-the-same-music">Three geometries for the same music</a></li>
+<li><a href="#part-iii---keys-scales-and-modes">Keys, scales, modes, and tonal maps</a></li>
+<li><a href="#part-iv---chords-inversions-voicings-and-arpeggios">Chords, inversions, voicings, and arpeggios</a></li>
+<li><a href="#part-v---transposition-as-a-systematic-skill">Transposition as a systematic skill</a></li>
+<li><a href="#part-vi---practice-programs">Practice programs</a></li>
+<li><a href="#part-vii---compact-reference">Compact reference</a></li>
+<li><a href="#appendix-a---all-seven-modes-in-all-12-practical-roots">Appendix A - all seven modes in all 12 roots</a></li>
+<li><a href="#appendix-b---common-scales-in-all-12-roots">Appendix B - common scales in all 12 roots</a></li>
+<li><a href="#appendix-c---chord-spelling-tables">Appendix C - chord spelling tables</a></li>
+<li><a href="#appendix-d---progressions-in-all-keys">Appendix D - progressions in all keys</a></li>
+<li><a href="#appendix-e---drill-cards">Appendix E - drill cards</a></li>
+<li><a href="#appendix-f---negative-harmony">Appendix F - negative harmony</a></li>
+<li><a href="#appendix-g---sources-and-product-layout-notes">Appendix G - sources and product-layout notes</a></li>
+</ol>
+<h1 id="part-i---music-from-first-principles">Part I - Music from first
+principles</h1>
+<h2 id="pitch-semitone-and-octave">1. Pitch, semitone, and octave</h2>
+<p>On a modern piano, an octave is divided into 12 equal semitone steps
+(12-tone equal temperament). After 12 semitones, note names repeat at
+double the frequency.</p>
+<p>The chromatic cycle is:</p>
+<p><code>C - C#/Db - D - D#/Eb - E - F - F#/Gb - G - G#/Ab - A - A#/Bb - B - C</code></p>
+<p>A piano makes this cycle visually uneven: seven white-note names and
+five black keys. A guitar makes it nearly uniform: every fret is one
+semitone. Push in Chromatic mode can also make semitone relationships
+geometrically regular.</p>
+<figure>
+<img alt="Two-octave keyboard map" src="../../assets/piano_map.svg"/>
+<figcaption aria-hidden="true">Two-octave keyboard map</figcaption>
+</figure>
+<h3 id="exercise-1---find-every-c">Exercise 1 - Find every C</h3>
+<ol type="1">
+<li>On the piano, find a group of two black keys.</li>
+<li>The white key immediately to its left is C.</li>
+<li>Find every C available without counting from another note.</li>
+<li>Repeat for F: it is immediately left of each group of three black
+keys.</li>
+<li>Close your eyes, move your hand, reopen, and orient yourself from
+the black-key groups.</li>
+</ol>
+<p><strong>Success criterion:</strong> you can identify C and F anywhere
+on the keyboard without counting; work towards two seconds without
+sacrificing accuracy.</p>
+<h2 id="intervals-are-distances">2. Intervals are distances</h2>
+<p>An interval can be understood as a semitone distance and as a
+scale-degree function.</p>
+<table class="wide">
+<thead>
+<tr>
+<th>Interval</th>
+<th style="text-align: right;">Semitones</th>
+<th>Degree shorthand</th>
+<th>From C</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Unison</td>
+<td style="text-align: right;">0</td>
+<td>1</td>
+<td>C</td>
+</tr>
+<tr>
+<td>Minor 2nd</td>
+<td style="text-align: right;">1</td>
+<td>b2</td>
+<td>Db</td>
+</tr>
+<tr>
+<td>Major 2nd</td>
+<td style="text-align: right;">2</td>
+<td>2</td>
+<td>D</td>
+</tr>
+<tr>
+<td>Minor 3rd</td>
+<td style="text-align: right;">3</td>
+<td>b3</td>
+<td>Eb</td>
+</tr>
+<tr>
+<td>Major 3rd</td>
+<td style="text-align: right;">4</td>
+<td>3</td>
+<td>E</td>
+</tr>
+<tr>
+<td>Perfect 4th</td>
+<td style="text-align: right;">5</td>
+<td>4</td>
+<td>F</td>
+</tr>
+<tr>
+<td>Tritone</td>
+<td style="text-align: right;">6</td>
+<td>b5 / #4</td>
+<td>Gb / F#</td>
+</tr>
+<tr>
+<td>Perfect 5th</td>
+<td style="text-align: right;">7</td>
+<td>5</td>
+<td>G</td>
+</tr>
+<tr>
+<td>Minor 6th</td>
+<td style="text-align: right;">8</td>
+<td>b6</td>
+<td>Ab</td>
+</tr>
+<tr>
+<td>Major 6th</td>
+<td style="text-align: right;">9</td>
+<td>6</td>
+<td>A</td>
+</tr>
+<tr>
+<td>Minor 7th</td>
+<td style="text-align: right;">10</td>
+<td>b7</td>
+<td>Bb</td>
+</tr>
+<tr>
+<td>Major 7th</td>
+<td style="text-align: right;">11</td>
+<td>7</td>
+<td>B</td>
+</tr>
+<tr>
+<td>Octave</td>
+<td style="text-align: right;">12</td>
+<td>8 / 1</td>
+<td>C</td>
+</tr>
+</tbody>
+</table>
+<h3 id="exercise-2---interval-translation">Exercise 2 - Interval
+translation</h3>
+<p>Pick a random tonic. Say the formula first, then find the note.</p>
+<ul>
+<li><code>1 → 5</code></li>
+<li><code>1 → b3</code></li>
+<li><code>1 → 3</code></li>
+<li><code>1 → b7</code></li>
+<li><code>1 → 7</code></li>
+</ul>
+<p>Do not slide a remembered shape. Recompute the interval from the
+tonic until the answer becomes automatic.</p>
+<h2 id="why-the-black-keys-are-useful">3. Why the black keys are
+useful</h2>
+<p>The piano is asymmetric, but asymmetry gives touch landmarks.
+White-only C major is visually simple but tactilely featureless. Keys
+such as B, Db, and Gb distribute the longer fingers onto black keys and
+can feel surprisingly natural.</p>
+<figure>
+<img alt="Db major keyboard" src="../../assets/piano_db_major.svg"/>
+<figcaption aria-hidden="true">Db major keyboard</figcaption>
+</figure>
+<h3 id="exercise-3---black-key-rehabilitation">Exercise 3 - Black-key
+rehabilitation</h3>
+<p>Play Db major slowly, one octave:</p>
+<p><code>Db Eb F Gb Ab Bb C Db</code></p>
+<p>Say degrees while playing:</p>
+<p><code>1 2 3 4 5 6 7 1</code></p>
+<p>Then play B major:</p>
+<p><code>B C# D# E F# G# A# B</code></p>
+<h1 id="part-ii---three-geometries-for-the-same-music">Part II - Three
+geometries for the same music</h1>
+<h2 id="piano-non-isomorphic-geometry">4. Piano: non-isomorphic
+geometry</h2>
+<p>On piano, the same interval formula produces different visible shapes
+in different keys. Compare:</p>
+<figure>
+<img alt="Cmaj7" src="../../assets/piano_cmaj7.svg"/>
+<figcaption aria-hidden="true">Cmaj7</figcaption>
+</figure>
+<figure>
+<img alt="Dbmaj7" src="../../assets/piano_dbmaj7.svg"/>
+<figcaption aria-hidden="true">Dbmaj7</figcaption>
+</figure>
+<p>Both use <code>1 3 5 7</code>. The chord formula is unchanged; the
+sounding pitches and keyboard geometry are not.</p>
+<h2 id="push-chromatic-fourths-as-an-isomorphic-reference">5. Push:
+chromatic fourths as an isomorphic reference</h2>
+<p>For this manual, <strong>Push is always treated in Chromatic
+mode</strong>, never in an In-Key layout. Use the fourths layout unless
+an exercise explicitly says otherwise. In the common 12-tone chromatic
+fourths geometry, moving one pad to the right is one semitone and moving
+one pad upward is five semitones (a perfect fourth). A key/scale
+selection may still be useful for lighting scale tones, but pitches
+outside the scale remain physically present. With <strong>Fixed
+ON</strong>, the same pad keeps its pitch when you change the selected
+key; use this setting when only changing the scale highlighting. With
+<strong>Fixed OFF</strong>, the grid shifts so the bottom-left pad
+follows the selected root; the same relative fingering then produces
+different pitches.</p>
+<figure>
+<img alt="Push C major reference in Chromatic mode" src="../../assets/push_c_major.svg"/>
+<figcaption aria-hidden="true">Push C major reference in Chromatic
+mode</figcaption>
+</figure>
+<p>With <strong>Fixed ON</strong>, change the reference scale to F#
+Dorian while remaining in Chromatic mode: the played pitches stay in
+place and the highlighted scale tones change. To transpose a shape by
+changing the selected root instead, switch <strong>Fixed OFF</strong>.
+The fourths layout retains its interval geometry in either case.</p>
+<figure>
+<img alt="Push F# Dorian reference in Chromatic mode" src="../../assets/push_fs_dorian.svg"/>
+<figcaption aria-hidden="true">Push F# Dorian reference in Chromatic
+mode</figcaption>
+</figure>
+<p>This makes Push a useful comparison instrument: it preserves a
+regular interval geometry, while piano forces the same interval formula
+into a varying white/black-key contour.</p>
+<h2 id="ableton-note-chromatic-pads-with-in-key-off">6. Ableton Note:
+chromatic pads with In Key off</h2>
+<p>Ableton Note’s melodic pads can use Fourths or Sequential layouts. In
+this manual, keep <strong>In Key OFF</strong> so all twelve chromatic
+pitches remain playable. For direct comparison with guitar and Push, use
+<strong>Fourths</strong>: the pad directly above another is five
+semitones higher.</p>
+<figure>
+<img alt="Ableton Note D Dorian reference, Chromatic/Fourths" src="../../assets/note_d_dorian.svg"/>
+<figcaption aria-hidden="true">Ableton Note D Dorian reference,
+Chromatic/Fourths</figcaption>
+</figure>
+<p>Use Note as a translation trainer: play an object on the chromatic
+pads, name its degree formula, then reproduce it on piano. The scale
+setting can act as a visual annotation, but it must not remove the
+chromatic notes you are trying to learn.</p>
+<h2 id="guitar-mostly-movable-geometry">7. Guitar: mostly movable
+geometry</h2>
+<p>In standard tuning, every fret is a semitone. Most interval/chord
+shapes transpose by sliding, with one important irregularity: the
+interval between G and B strings is a major third rather than a perfect
+fourth.</p>
+<figure>
+<img alt="Guitar C major" src="../../assets/guitar_c_major.svg"/>
+<figcaption aria-hidden="true">Guitar C major</figcaption>
+</figure>
+<p>The piano problem is therefore the reverse of a barre chord: the
+<em>formula</em> transposes, but the <em>shape</em> does not.</p>
+<h3 id="movable-shapes-hide-pitch-location">7.1 Movable shapes hide
+pitch location</h3>
+<p>Movable geometry is useful, but it creates a specific blind spot. On
+guitar, a scale or chord can often be transposed by moving a familiar
+shape up or down the neck. The fingering relationship survives, but
+every sounding pitch has moved with it. A player can therefore know
+<em>how to move the object</em> without knowing which notes are
+sounding, or where the same pitch classes live in another register. Push
+and Note can encourage the same habit because their chromatic layouts
+are largely isomorphic.</p>
+<p>Piano exposes the problem differently. Several keys can be practised
+in the same register: C major around middle C, Db major beginning a
+semitone higher, D major another semitone higher. The hand geometry
+changes, but the keyboard remains a fixed map of absolute pitches. This
+makes it easier to notice that transposition and relocation are not the
+same operation.</p>
+<p>The book therefore treats <strong>shape as a consequence, not as the
+musical object</strong>. A shape is allowed to become automatic only
+after you can recover what it means: function, note names, register, and
+exact locations.</p>
+<div class="practice-note">
+<strong>Fixed-register rule.</strong> When practising transposition on
+guitar, Push, or Note, do not always slide the same shape. Choose a
+register window first—for example C3–C5—and realize each scale or chord
+inside that window. Changing key will then force new strings, pads,
+inversions, or fingerings while keeping the sounding range comparable.
+</div>
+<h3 id="exercise-3a---one-register-many-geometries">Exercise 3A - One
+register, many geometries</h3>
+<p>Choose the register from C3 through C5. Play these major scales
+without leaving it:</p>
+<ol type="1">
+<li>C major</li>
+<li>Db major</li>
+<li>D major</li>
+<li>Eb major</li>
+<li>E major</li>
+</ol>
+<p>On piano, name every note as you play it. On guitar or Push/Note,
+resist the urge to preserve one movable shape: choose positions that
+keep the pitches inside the same register window. Then reverse the
+exercise: keep a familiar shape and state explicitly how far the entire
+sounding register moved.</p>
+<p><strong>Success criterion:</strong> you can distinguish
+<em>transposing the musical relationship</em> from <em>moving a physical
+shape</em>, and you can name the exact pitches produced by either
+operation.</p>
+<h1 id="part-iii---keys-scales-and-modes">Part III - Keys, scales, and
+modes</h1>
+<h2 id="major-scale-as-the-reference-system">8. Major scale as the
+reference system</h2>
+<p>Major scale step pattern:</p>
+<p><code>W W H W W W H</code></p>
+<p>Degree formula:</p>
+<p><code>1 2 3 4 5 6 7</code></p>
+<p>A key is not a hand shape. It is a tonic plus an ordered pitch
+collection.</p>
+<h3 id="the-12-practical-major-keys">The 12 practical major keys</h3>
+<table>
+<thead>
+<tr>
+<th>Major key</th>
+<th>Notes</th>
+<th>Relative minor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>C</td>
+<td>C D E F G A B</td>
+<td>Am</td>
+</tr>
+<tr>
+<td>Db</td>
+<td>Db Eb F Gb Ab Bb C</td>
+<td>Bbm</td>
+</tr>
+<tr>
+<td>D</td>
+<td>D E F# G A B C#</td>
+<td>Bm</td>
+</tr>
+<tr>
+<td>Eb</td>
+<td>Eb F G Ab Bb C D</td>
+<td>Cm</td>
+</tr>
+<tr>
+<td>E</td>
+<td>E F# G# A B C# D#</td>
+<td>C#m</td>
+</tr>
+<tr>
+<td>F</td>
+<td>F G A Bb C D E</td>
+<td>Dm</td>
+</tr>
+<tr>
+<td>F#</td>
+<td>F# G# A# B C# D# E#</td>
+<td>D#m</td>
+</tr>
+<tr>
+<td>G</td>
+<td>G A B C D E F#</td>
+<td>Em</td>
+</tr>
+<tr>
+<td>Ab</td>
+<td>Ab Bb C Db Eb F G</td>
+<td>Fm</td>
+</tr>
+<tr>
+<td>A</td>
+<td>A B C# D E F# G#</td>
+<td>F#m</td>
+</tr>
+<tr>
+<td>Bb</td>
+<td>Bb C D Eb F G A</td>
+<td>Gm</td>
+</tr>
+<tr>
+<td>B</td>
+<td>B C# D# E F# G# A#</td>
+<td>G#m</td>
+</tr>
+</tbody>
+</table>
+<figure>
+<img alt="Circle of fifths with relative minors" src="../../assets/circle_fifths.svg"/>
+<figcaption aria-hidden="true">Circle of fifths with relative
+minors</figcaption>
+</figure>
+<p>The circle is more than a key-signature mnemonic. Adjacent keys
+differ by only one scale pitch, so moving around it is a controlled way
+to acquire keyboard topography. Clockwise motion is a chain of ascending
+fifths; reading the same ring counterclockwise gives descending fifths /
+ascending fourths, which is why it also models much functional root
+motion.</p>
+<h3 id="exercise-4---circle-of-fifths-acquisition">Exercise 4 -
+Circle-of-fifths acquisition</h3>
+<p>Learn major keys in this order:</p>
+<p><code>C → G → D → A → E → B → Gb/F# → Db → Ab → Eb → Bb → F</code></p>
+<p>For each key:</p>
+<ol type="1">
+<li>Say the seven notes.</li>
+<li>Play one octave slowly.</li>
+<li>Say degrees <code>1 2 3 4 5 6 7 1</code> while playing.</li>
+<li>Build <code>1-3-5</code>, then <code>1-3-5-7</code>.</li>
+<li>Arpeggiate them.</li>
+<li>Play the same key on Push/Note.</li>
+<li>Find the tonic and scale tones on guitar.</li>
+</ol>
+<p>Do not add speed until the note names are reliable.</p>
+<h2 id="the-seven-diatonic-modes">9. The seven diatonic modes</h2>
+<p>The modes are not seven unrelated scales. They are seven rotations /
+alterations of a diatonic collection, best understood as degree formulas
+relative to a new tonic.</p>
+<table>
+<thead>
+<tr>
+<th>Mode</th>
+<th>Formula</th>
+<th>Characteristic degree</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ionian</td>
+<td><code>1 2 3 4 5 6 7</code></td>
+<td>major 7</td>
+</tr>
+<tr>
+<td>Dorian</td>
+<td><code>1 2 b3 4 5 6 b7</code></td>
+<td>natural 6 over minor</td>
+</tr>
+<tr>
+<td>Phrygian</td>
+<td><code>1 b2 b3 4 5 b6 b7</code></td>
+<td>b2</td>
+</tr>
+<tr>
+<td>Lydian</td>
+<td><code>1 2 3 #4 5 6 7</code></td>
+<td>#4</td>
+</tr>
+<tr>
+<td>Mixolydian</td>
+<td><code>1 2 3 4 5 6 b7</code></td>
+<td>b7 over major</td>
+</tr>
+<tr>
+<td>Aeolian</td>
+<td><code>1 2 b3 4 5 b6 b7</code></td>
+<td>b6</td>
+</tr>
+<tr>
+<td>Locrian</td>
+<td><code>1 b2 b3 4 b5 b6 b7</code></td>
+<td>b5</td>
+</tr>
+</tbody>
+</table>
+<h3 id="exercise-5---break-the-white-key-trap">Exercise 5 - Break the
+white-key trap</h3>
+<p>If C major, A minor, and D Dorian are your default universe, they all
+use the same pitch collection. Deliberately practice modes whose tonic
+forces black keys:</p>
+<ul>
+<li>Eb Dorian: <code>Eb F Gb Ab Bb C Db</code></li>
+<li>F# Dorian: <code>F# G# A B C# D# E</code></li>
+<li>Db Lydian: <code>Db Eb F G Ab Bb C</code></li>
+<li>Ab Mixolydian: <code>Ab Bb C Db Eb F Gb</code></li>
+</ul>
+<p>For each, alternate between:</p>
+<p><code>scale → triad → seventh chord → arpeggio → 2-bar improvisation</code></p>
+<p>For an aural check, sustain a D-minor chord or D pedal. Compare D
+Aeolian (<code>D E F G A Bb C</code>) with D Dorian
+(<code>D E F G A B C</code>) using the same short melody, changing only
+Bb to B. Keep D as the tonic; then transpose this comparison to E, where
+the contrasting sixths are C and C#. The test is whether you can hear,
+name and play that one changed degree without changing the tonal
+centre.</p>
+<h2 id="common-non-diatonic-scales">10. Common non-diatonic scales</h2>
+<p>Harmonic minor introduces a leading tone into natural minor. Melodic
+minor (jazz usage) raises 6 and 7. Pentatonic and blues scales simplify
+the pitch set for melodic practice. Whole tone removes semitone
+hierarchy and produces symmetrical augmented harmony.</p>
+<table>
+<thead>
+<tr>
+<th>Scale</th>
+<th>Formula</th>
+<th>Typical use</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Harmonic minor</td>
+<td><code>1 2 b3 4 5 b6 7</code></td>
+<td>minor-key dominant function</td>
+</tr>
+<tr>
+<td>Melodic minor</td>
+<td><code>1 2 b3 4 5 6 7</code></td>
+<td>jazz minor, altered modal harmony</td>
+</tr>
+<tr>
+<td>Major pentatonic</td>
+<td><code>1 2 3 5 6</code></td>
+<td>consonant melody</td>
+</tr>
+<tr>
+<td>Minor pentatonic</td>
+<td><code>1 b3 4 5 b7</code></td>
+<td>rock, blues, modal melody</td>
+</tr>
+<tr>
+<td>Minor blues</td>
+<td><code>1 b3 4 b5 5 b7</code></td>
+<td>blues vocabulary</td>
+</tr>
+<tr>
+<td>Whole tone</td>
+<td><code>1 2 3 #4 #5 b7</code></td>
+<td>symmetrical / augmented sound</td>
+</tr>
+</tbody>
+</table>
+<h1 id="part-iv---chords-inversions-voicings-and-arpeggios">Part IV -
+Chords, inversions, voicings, and arpeggios</h1>
+<h2 id="chords-are-formulas">11. Chords are formulas</h2>
+<p>Read a chord symbol from left to right: <strong>root letter → chord
+quality → extensions or alterations</strong>. For example,
+<code>Abmaj9</code> means an Ab-root chord with major quality, a major
+seventh, and a ninth.</p>
+<h3 id="the-circle-of-thirds-the-geometry-inside-tertian-chords">11.1
+The circle of thirds: the geometry inside tertian chords</h3>
+<p>In a diatonic key, reorder the seven scale degrees as:</p>
+<p><code>1 → 3 → 5 → 7 → 2 → 4 → 6 → 1</code></p>
+<p>In C major this is <code>C → E → G → B → D → F → A → C</code>. Three
+adjacent positions give a triad; four give a seventh chord. Unlike the
+circle of fifths, this <strong>diatonic circle of thirds depends on the
+key</strong> because the sequence uses scale notes rather than a fixed
+chromatic interval.</p>
+<figure>
+<img alt="Diatonic circle of thirds in C major" src="../../assets/circle_thirds.svg"/>
+<figcaption aria-hidden="true">Diatonic circle of thirds in C
+major</figcaption>
+</figure>
+<p>There are also chromatic cycles made from a constant major or minor
+third. They are symmetrical subsets of the 12-note system: major thirds
+close after three steps, minor thirds after four. These cycles explain
+augmented and diminished symmetry and are useful when you later explore
+chromatic harmony.</p>
+<figure>
+<img alt="Major-third and minor-third chromatic cycles" src="../../assets/third_cycles.svg"/>
+<figcaption aria-hidden="true">Major-third and minor-third chromatic
+cycles</figcaption>
+</figure>
+<h3 id="core-chord-formulas">11.2 Core chord formulas</h3>
+<h3 id="core-triads">Core triads</h3>
+<table>
+<thead>
+<tr>
+<th>Chord</th>
+<th>Formula</th>
+<th>C example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Major</td>
+<td><code>1 3 5</code></td>
+<td>C E G</td>
+</tr>
+<tr>
+<td>Minor</td>
+<td><code>1 b3 5</code></td>
+<td>C Eb G</td>
+</tr>
+<tr>
+<td>Diminished</td>
+<td><code>1 b3 b5</code></td>
+<td>C Eb Gb</td>
+</tr>
+<tr>
+<td>Augmented</td>
+<td><code>1 3 #5</code></td>
+<td>C E G#</td>
+</tr>
+<tr>
+<td>sus2</td>
+<td><code>1 2 5</code></td>
+<td>C D G</td>
+</tr>
+<tr>
+<td>sus4</td>
+<td><code>1 4 5</code></td>
+<td>C F G</td>
+</tr>
+</tbody>
+</table>
+<h3 id="seventh-chords">Seventh chords</h3>
+<table>
+<thead>
+<tr>
+<th>Chord</th>
+<th>Formula</th>
+<th>C example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>maj7</td>
+<td><code>1 3 5 7</code></td>
+<td>C E G B</td>
+</tr>
+<tr>
+<td>7</td>
+<td><code>1 3 5 b7</code></td>
+<td>C E G Bb</td>
+</tr>
+<tr>
+<td>m7</td>
+<td><code>1 b3 5 b7</code></td>
+<td>C Eb G Bb</td>
+</tr>
+<tr>
+<td>m(maj7)</td>
+<td><code>1 b3 5 7</code></td>
+<td>C Eb G B</td>
+</tr>
+<tr>
+<td>m7b5</td>
+<td><code>1 b3 b5 b7</code></td>
+<td>C Eb Gb Bb</td>
+</tr>
+<tr>
+<td>dim7</td>
+<td><code>1 b3 b5 bb7</code></td>
+<td>C Eb Gb Bbb</td>
+</tr>
+</tbody>
+</table>
+<h2 id="inversions">12. Inversions</h2>
+<p>A chord inversion changes which chord tone is in the bass without
+changing chord identity.</p>
+<p>For Cmaj7:</p>
+<ul>
+<li>Root position: <code>C E G B</code> = <code>1 3 5 7</code></li>
+<li>1st inversion: <code>E G B C</code> = <code>3 5 7 1</code></li>
+<li>2nd inversion: <code>G B C E</code> = <code>5 7 1 3</code></li>
+<li>3rd inversion: <code>B C E G</code> = <code>7 1 3 5</code></li>
+</ul>
+<h3 id="exercise-6---one-chord-twelve-roots-four-inversions">Exercise 6
+- One chord, twelve roots, four inversions</h3>
+<p>Take <code>m7 = 1 b3 5 b7</code>.</p>
+<ol type="1">
+<li>Build Cm7.</li>
+<li>Play all four inversions.</li>
+<li>Move the root chromatically to Db, D, Eb … B.</li>
+<li>At each root, say the four note names before playing.</li>
+<li>Then reverse: hear or imagine a voicing and identify its degree
+order.</li>
+</ol>
+<h2 id="piano-voicing-families">13. Piano voicing families</h2>
+<p>A <strong>voicing</strong> is a choice of register, doubling,
+omission, and spacing for a chord. This is where pitch-class knowledge
+becomes exact pitch knowledge: <code>C E G B</code> names chord tones;
+<code>C3 E3 G3 B3</code> names one concrete realization.</p>
+<h3 id="close-position">13.1 Close position</h3>
+<p>Keep chord tones within one octave. Best for learning spelling and
+inversions.</p>
+<p><code>Cmaj7: C E G B</code></p>
+<h3 id="open-spread-position">13.2 Open / spread position</h3>
+<p>Move one or more inner tones by an octave.</p>
+<p><code>Cmaj7: C G B E</code></p>
+<p>This creates more air and reduces midrange congestion.</p>
+<h3 id="shell-voicings">13.3 Shell voicings</h3>
+<p>For jazz/pop accompaniment, the 3rd and 7th carry much of the
+harmonic identity.</p>
+<ul>
+<li>Cmaj7 shell: <code>C E B</code> or <code>C B E</code></li>
+<li>C7 shell: <code>C E Bb</code></li>
+<li>Cm7 shell: <code>C Eb Bb</code></li>
+</ul>
+<h3 id="rootless-guide-tone-voicings">13.4 Rootless guide-tone
+voicings</h3>
+<p>When bass supplies the root, omit it and voice color tones.</p>
+<p>For a ii-V-I in C:</p>
+<ul>
+<li>Dm7: <code>F A C E</code> = <code>b3 5 b7 9</code></li>
+<li>G7: <code>F A B E</code> = <code>b7 9 3 13</code></li>
+<li>Cmaj7: <code>E G B D</code> = <code>3 5 7 9</code></li>
+</ul>
+<p>The important feature is voice leading: individual notes move by
+small intervals.</p>
+<h3 id="quartal-voicings">13.5 Quartal voicings</h3>
+<p>Stack fourths rather than thirds. In D Dorian, a simple voicing
+is:</p>
+<p><code>D G C F</code> = <code>1 4 b7 b3</code></p>
+<p>Quartal harmony is especially natural on guitar and fourths-based pad
+layouts.</p>
+<h3 id="drop-2-concept">13.6 Drop-2 concept</h3>
+<p>Take a four-note close voicing, number voices from the top, and move
+the second-highest voice down an octave. This produces a wider four-note
+texture common in arranging and guitar voicings.</p>
+<p>Example Cmaj7 close: <code>C E G B</code>. From the top: B(1), G(2),
+E(3), C(4). Drop G down an octave: <code>G C E B</code>.</p>
+<h2 id="extensions">14. Extensions</h2>
+<p>Extensions continue tertian stacking beyond the seventh:</p>
+<ul>
+<li>9 = scale degree 2 above the octave</li>
+<li>11 = scale degree 4 above the octave</li>
+<li>13 = scale degree 6 above the octave</li>
+</ul>
+<p>Chord symbols usually imply selective voicing, not every possible
+chord tone.</p>
+<table>
+<thead>
+<tr>
+<th>Chord</th>
+<th>Useful formula</th>
+<th>C example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>maj9</td>
+<td><code>1 3 5 7 9</code></td>
+<td>C E G B D</td>
+</tr>
+<tr>
+<td>9</td>
+<td><code>1 3 5 b7 9</code></td>
+<td>C E G Bb D</td>
+</tr>
+<tr>
+<td>m9</td>
+<td><code>1 b3 5 b7 9</code></td>
+<td>C Eb G Bb D</td>
+</tr>
+<tr>
+<td>6</td>
+<td><code>1 3 5 6</code></td>
+<td>C E G A</td>
+</tr>
+<tr>
+<td>m6</td>
+<td><code>1 b3 5 6</code></td>
+<td>C Eb G A</td>
+</tr>
+<tr>
+<td>7sus4</td>
+<td><code>1 4 5 b7</code></td>
+<td>C F G Bb</td>
+</tr>
+</tbody>
+</table>
+<p>For practical keyboard voicing, the 5th is often omitted before the
+3rd or 7th.</p>
+<h2 id="arpeggios-are-chords-unfolded-in-time">15. Arpeggios are chords
+unfolded in time</h2>
+<p>Do not learn arpeggios as an unrelated technique. Use the chord
+vocabulary you are already learning.</p>
+<h3 id="exercise-7---arpeggio-compiler">Exercise 7 - Arpeggio
+compiler</h3>
+<p>For each root, play:</p>
+<ol type="1">
+<li><code>maj7</code>: <code>1 3 5 7 1 7 5 3 1</code></li>
+<li><code>m7</code>: <code>1 b3 5 b7 1 b7 5 b3 1</code></li>
+<li><code>7</code>: <code>1 3 5 b7 1 b7 5 3 1</code></li>
+<li><code>m7b5</code>: <code>1 b3 b5 b7 1 b7 b5 b3 1</code></li>
+</ol>
+<p>Start with one octave. Then use two octaves and choose fingerings
+that minimize twisting. At speed, consult conventional piano fingering
+and keep thumbs mostly on white keys where practical.</p>
+<h1 id="part-v---transposition-as-a-systematic-skill">Part V -
+Transposition as a systematic skill</h1>
+<h2 id="the-translation-pipeline">16. The translation pipeline</h2>
+<figure>
+<img alt="Transposition pipeline from source notes through function to new keyboard geometry" src="../../assets/transposition_pipeline.svg"/>
+<figcaption aria-hidden="true">Transposition pipeline from source notes
+through function to new keyboard geometry</figcaption>
+</figure>
+<p>When transposing, do not translate hand shape to hand shape.
+Translate through function and then make register explicit:</p>
+<p><code>source notes → degree formula → target pitch classes → register → target geometry</code></p>
+<p>Example:</p>
+<p><code>Am - F - C - G</code></p>
+<p>In A minor this is:</p>
+<p><code>i - bVI - bIII - bVII</code></p>
+<p>Move the function to Bb minor:</p>
+<p><code>Bbm - Gb - Db - Ab</code></p>
+<p>The formula survives unchanged. In a concrete piano voicing, choose
+the following source pitches and transpose <strong>each sounding pitch
+up one semitone</strong>. The chord labels and Roman numerals alone do
+not specify the voicing.</p>
+<table class="wide">
+<thead>
+<tr>
+<th>Original chord</th>
+<th>Source voicing</th>
+<th>Target chord</th>
+<th>Target voicing</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Am</td>
+<td><code>A3 C4 E4</code></td>
+<td>Bbm</td>
+<td><code>Bb3 Db4 F4</code></td>
+</tr>
+<tr>
+<td>F</td>
+<td><code>A3 C4 F4</code></td>
+<td>Gb</td>
+<td><code>Bb3 Db4 Gb4</code></td>
+</tr>
+<tr>
+<td>C</td>
+<td><code>G3 C4 E4</code></td>
+<td>Db</td>
+<td><code>Ab3 Db4 F4</code></td>
+</tr>
+<tr>
+<td>G</td>
+<td><code>G3 B3 D4</code></td>
+<td>Ab</td>
+<td><code>Ab3 C4 Eb4</code></td>
+</tr>
+</tbody>
+</table>
+<p>These are deliberately close voicings, not four successive
+root-position triads. The F and C chords use inversions; the transposed
+versions retain the corresponding bass notes and the entire contour. On
+piano, locate each target pitch by its name and octave, not by copying
+the earlier fingering. For example, <code>E4 → F4</code> crosses
+adjacent white keys while <code>C4 → Db4</code> moves to a black key.
+Keep the given registers when you practise the example.</p>
+<p><strong>Check:</strong> Return to A minor and transpose the four
+voiced chords <em>down</em> one semitone to Ab minor. Write the twelve
+sounding target pitches (including octaves) before playing; then verify
+them on piano. This is a literal note-for-note transposition, not merely
+a substitution of chord symbols.</p>
+<h3 id="exercise-8---functional-progression-through-all-12-roots">Exercise 8
+- Functional progression through all 12 roots</h3>
+<p>Pick one progression and cycle through roots chromatically. Do not
+use a transpose button on the piano.</p>
+<p>Suggested first progression:</p>
+<p><code>i - bVI - bIII - bVII</code></p>
+<p>Then:</p>
+<ul>
+<li><code>I - V - vi - IV</code></li>
+<li><code>ii - V - I</code></li>
+<li><code>I - vi - IV - V</code></li>
+<li><code>i - iv - V7 - i</code></li>
+</ul>
+<h2 id="ii-v-i-and-voice-leading">17. ii-V-I and voice leading</h2>
+<p>The <code>ii-V-I</code> progression means a minor chord on scale
+degree 2, a dominant-function chord on degree 5, and the tonic chord on
+degree 1. It is a compact laboratory for functional harmony and
+economical piano movement.</p>
+<p>In C major:</p>
+<p><code>Dm7 → G7 → Cmaj7</code></p>
+<p>Try close positions first, then minimize movement. Track each voice
+independently. The goal is not identical shapes but small voice-leading
+distances.</p>
+<figure>
+<img alt="Voice-leading graph for one ii-V-I realization" src="../../assets/voice_leading.svg"/>
+<figcaption aria-hidden="true">Voice-leading graph for one ii-V-I
+realization</figcaption>
+</figure>
+<p>The graph is not a required voicing; it is a way to
+<strong>see</strong> why a good voicing feels economical. Repeated
+horizontal levels are common tones; shallow slopes are small interval
+moves.</p>
+<h2 id="transposition-between-pushnote-and-piano">18. Transposition
+between Push/Note and piano</h2>
+<p>Use the isomorphic controller as the abstract reference and piano as
+the concrete realization.</p>
+<h3 id="exercise-9---controller-to-piano-translation-loop">Exercise 9 -
+Controller-to-piano translation loop</h3>
+<ol type="1">
+<li>Select D Dorian. On Push choose <strong>Chromatic / Fourths / Fixed
+OFF</strong>; on Note choose <strong>Fourths / In Key OFF</strong>.</li>
+<li>Play a 3- or 4-note shape, and spell its sounding pitches and
+degrees from D.</li>
+<li>On Push, keep the shape and select F# Dorian: Fixed OFF shifts the
+pitch assignment so the selected root remains at the bottom-left. On
+Note, changing the key with In Key OFF does <strong>not</strong>
+transpose the existing pads; move the shape to a new F# root
+yourself.</li>
+<li>Verify the new pitches by ear or note display, not just by pad
+illumination. Say the target notes before playing them on piano.</li>
+<li>Repeat with a black-key root and then with Push Fixed ON to confirm
+that key selection <em>alone</em> no longer transposes the sounding pad
+pitches.</li>
+</ol>
+<p>Example:</p>
+<ul>
+<li>D Dorian degrees: <code>1 b3 5 b7</code> → <code>D F A C</code></li>
+<li>F# Dorian same degrees → <code>F# A C# E</code></li>
+</ul>
+<p>For these four chord tones, a simple piano check is
+<code>D3 F3 A3 C4</code> → <code>F#3 A3 C#4 E4</code>. Here the chosen
+voicing stays ordered in thirds while its absolute positions change. Do
+not interpret Note’s scale-highlight setting as pitch transposition.</p>
+<h2 id="transposition-between-guitar-and-piano">19. Transposition
+between guitar and piano</h2>
+<p>A guitar position is not a key. The same pitch class appears at
+several string/fret locations, and a movable shape normally changes
+register as it moves. The aim is not to stop using shapes, but to be
+able to enter and leave them deliberately.</p>
+<h3 id="exercise-10---barre-shape-decomposition">Exercise 10 -
+Barre-shape decomposition</h3>
+<p>Take a movable guitar chord shape you know well.</p>
+<ol type="1">
+<li>Name the chord quality.</li>
+<li>Write its formula.</li>
+<li>Play it at three roots on guitar.</li>
+<li>For each root, spell the notes.</li>
+<li>State the lowest and highest sounding pitch, including octave
+numbers.</li>
+<li>Build those exact pitches on piano.</li>
+<li>Rebuild the same chord quality on piano in the <em>same
+register</em> after changing root.</li>
+<li>Return to guitar and find a different fingering that matches the
+piano register rather than the original movable shape.</li>
+</ol>
+<p>This converts geometric guitar intuition into harmonic-function and
+pitch-location intuition rather than discarding it.</p>
+<h1 id="part-vi---practice-programs">Part VI - Practice programs</h1>
+<h2 id="minute-transposition-routine">20. 20-minute transposition
+routine</h2>
+<table>
+<colgroup>
+<col style="width: 40%"/>
+<col style="width: 30%"/>
+<col style="width: 30%"/>
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: right;">Time</th>
+<th>Task</th>
+<th>Rule</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">5 min</td>
+<td>One scale/mode in selected roots</td>
+<td>Say degrees and note names</td>
+</tr>
+<tr>
+<td style="text-align: right;">5 min</td>
+<td>One chord quality in selected roots</td>
+<td>Root position, then inversions</td>
+</tr>
+<tr>
+<td style="text-align: right;">5 min</td>
+<td>Arpeggiate the same chord</td>
+<td>Slow, even, relaxed</td>
+</tr>
+<tr>
+<td style="text-align: right;">5 min</td>
+<td>One short progression in selected roots</td>
+<td>Functional analysis first</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Choose the workload by accuracy:</strong> begin with three
+roots per block; use six once you can name and play each without
+correction; twelve is an advanced benchmark rather than the default.
+Five minutes divided by twelve allows only 25 seconds per root. Repeat a
+troublesome key next session instead of racing through it. Start in Db,
+Eb, F# or Ab at least half the time, and only add tempo after three
+error-free repetitions.</p>
+<h2 id="eight-week-curriculum---beginner-track">21. Eight-week
+curriculum - beginner track</h2>
+<h3 id="week-1---keyboard-map-and-semitones">Week 1 - Keyboard map and
+semitones</h3>
+<ul>
+<li>Find C and F from black-key groups.</li>
+<li>Learn note names.</li>
+<li>Play chromatic steps.</li>
+<li>Learn finger numbers 1-5 (thumb to little finger).</li>
+<li>Build perfect fifths from random roots.</li>
+</ul>
+<h3 id="week-2---major-scale-and-triads">Week 2 - Major scale and
+triads</h3>
+<ul>
+<li>C, G, D, F major.</li>
+<li>Build <code>1 3 5</code> and <code>1 b3 5</code> from each
+tonic.</li>
+<li>Hear major vs minor quality.</li>
+</ul>
+<h3 id="week-3---extend-major-key-coverage-slowly">Week 3 - Extend
+major-key coverage, slowly</h3>
+<ul>
+<li>Add A, E, B and Db; continue introducing Gb, Ab, Eb and Bb in later
+weeks as accuracy permits.</li>
+<li>One octave only.</li>
+<li>Say notes before playing; do not advance after repeated errors.</li>
+</ul>
+<h3 id="week-4---seventh-chords">Week 4 - Seventh chords</h3>
+<ul>
+<li>maj7, 7, m7.</li>
+<li>Root position and first inversion.</li>
+<li>Simple I-IV-V and ii-V-I progressions.</li>
+</ul>
+<h3 id="week-5---minor-and-dorian">Week 5 - Minor and Dorian</h3>
+<ul>
+<li>Natural minor in all roots.</li>
+<li>Dorian in four roots with black keys.</li>
+<li>Compare Aeolian b6 vs Dorian natural 6.</li>
+</ul>
+<h3 id="week-6---inversions-and-voice-leading">Week 6 - Inversions and
+voice leading</h3>
+<ul>
+<li>All inversions of major/minor triads.</li>
+<li>Nearest inversion when changing chords.</li>
+<li>Keep common tones under the same finger when possible.</li>
+</ul>
+<h3 id="week-7---arpeggios-and-accompaniment">Week 7 - Arpeggios and
+accompaniment</h3>
+<ul>
+<li>Broken triads and sevenths.</li>
+<li>Left-hand root + right-hand chord.</li>
+<li>Then left-hand shell + right-hand melody.</li>
+</ul>
+<h3 id="week-8---transpose-actual-music">Week 8 - Transpose actual
+music</h3>
+<ul>
+<li>Choose two songs/progressions.</li>
+<li>Analyze degrees.</li>
+<li>Play in three keys accurately, work towards six, then treat all
+twelve as a further challenge.</li>
+<li>Record one version on piano and one on Push/Note.</li>
+</ul>
+<h2 id="eight-week-curriculum---experienced-guitarist-producer-track">22.
+Eight-week curriculum - experienced guitarist / producer track</h2>
+<h3 id="week-1---destroy-the-c-major-dependency">Week 1 - Destroy the
+C-major dependency</h3>
+<p>Every practice item begins on Db, F#, Ab, or B. Major, Dorian, m7,
+maj7, dominant 7. Keep at least half of the work inside one fixed
+two-octave register window so transposition cannot be reduced to sliding
+a shape.</p>
+<h3 id="week-2---chord-compiler">Week 2 - Chord compiler</h3>
+<p>One chord formula per day through all 12 roots; all inversions.</p>
+<h3 id="week-3---modal-compiler">Week 3 - Modal compiler</h3>
+<p>Dorian, Mixolydian, Lydian, Aeolian through all 12 roots. Improvise
+two bars per root.</p>
+<h3 id="week-4---ii-v-i">Week 4 - ii-V-I</h3>
+<p>All 12 major keys. First root-position spellings, then economical
+inversions, then shells/rootless voicings.</p>
+<h3 id="week-5---minor-harmony">Week 5 - Minor harmony</h3>
+<p>Natural/harmonic/melodic minor. <code>i-iv-V7-i</code> in all 12
+roots. Hear the leading tone created by harmonic minor.</p>
+<h3 id="week-6---cross-controller-translation">Week 6 - Cross-controller
+translation</h3>
+<p>Push/Note → degree formula → pitch names + register → piano. Guitar →
+degree formula → pitch names + register → piano. No direct visual
+copying.</p>
+<h3 id="week-7---voicing-families">Week 7 - Voicing families</h3>
+<p>Close, spread, shells, rootless guide tones, quartal, drop-2.
+Transpose one voicing family through all roots.</p>
+<h3 id="week-8---repertoire-stress-test">Week 8 - Repertoire stress
+test</h3>
+<p>Choose your own material that normally lands in A minor / D Dorian /
+C major. Force it into Db, E, F#, Ab, and Bb before returning to its
+original key.</p>
+<h2 id="tempo-and-accuracy-protocol">23. Tempo and accuracy
+protocol</h2>
+<p>Use a metronome only after note selection is correct.</p>
+<ol type="1">
+<li>Begin without pulse: correct notes, relaxed hands.</li>
+<li>Use 50-60 bpm, one note per beat.</li>
+<li>Increase only after three error-free repetitions.</li>
+<li>If an error appears twice, reduce tempo by 10-15%.</li>
+<li>For transposition drills, cognitive speed matters more than finger
+speed: say the target notes before playing.</li>
+</ol>
+<h2 id="what-to-memorize-vs-what-to-derive">24. What to memorize vs what
+to derive</h2>
+<p>Memorize:</p>
+<ul>
+<li>note names on piano, including octave/register landmarks</li>
+<li>semitone distances of core intervals</li>
+<li>scale-degree formulas</li>
+<li>chord formulas</li>
+<li>major key spellings</li>
+<li>tactile location of black-key groups</li>
+</ul>
+<p>Derive initially, then allow motor memory to take over:</p>
+<ul>
+<li>each chord’s piano geometry</li>
+<li>each scale’s physical contour</li>
+<li>alternate guitar/controller realizations of the same pitches in a
+fixed register</li>
+<li>inversions in every key</li>
+<li>efficient voice leading</li>
+</ul>
+<p>Do <strong>not</strong> memorize twelve unrelated pictures if one
+formula explains them.</p>
+<h1 id="part-vii---compact-reference">Part VII - Compact reference</h1>
+<h2 id="circle-of-fifths-quick-reference">25. Circle of fifths quick
+reference</h2>
+<figure>
+<img alt="Circle of fifths" src="../../assets/circle_fifths.svg"/>
+<figcaption aria-hidden="true">Circle of fifths</figcaption>
+</figure>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Sharps/flats</th>
+<th>Relative minor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>C</td>
+<td>none</td>
+<td>Am</td>
+</tr>
+<tr>
+<td>G</td>
+<td>F#</td>
+<td>Em</td>
+</tr>
+<tr>
+<td>D</td>
+<td>F#, C#</td>
+<td>Bm</td>
+</tr>
+<tr>
+<td>A</td>
+<td>F#, C#, G#</td>
+<td>F#m</td>
+</tr>
+<tr>
+<td>E</td>
+<td>F#, C#, G#, D#</td>
+<td>C#m</td>
+</tr>
+<tr>
+<td>B</td>
+<td>F#, C#, G#, D#, A#</td>
+<td>G#m</td>
+</tr>
+<tr>
+<td>Gb</td>
+<td>Bb, Eb, Ab, Db, Gb, Cb</td>
+<td>Ebm</td>
+</tr>
+<tr>
+<td>Db</td>
+<td>Bb, Eb, Ab, Db, Gb</td>
+<td>Bbm</td>
+</tr>
+<tr>
+<td>Ab</td>
+<td>Bb, Eb, Ab, Db</td>
+<td>Fm</td>
+</tr>
+<tr>
+<td>Eb</td>
+<td>Bb, Eb, Ab</td>
+<td>Cm</td>
+</tr>
+<tr>
+<td>Bb</td>
+<td>Bb, Eb</td>
+<td>Gm</td>
+</tr>
+<tr>
+<td>F</td>
+<td>Bb</td>
+<td>Dm</td>
+</tr>
+</tbody>
+</table>
+<h2 id="circles-of-thirds-quick-reference">26. Circles of thirds quick
+reference</h2>
+<p><strong>Diatonic circle of thirds:</strong>
+<code>1-3-5-7-2-4-6</code>. Use it to spell tertian chords inside any
+key. A triad is three adjacent entries; a seventh chord is four.</p>
+<p><strong>Chromatic major-third cycles:</strong> +4 semitones; three
+notes per cycle. Example: <code>C-E-Ab-C</code>.</p>
+<p><strong>Chromatic minor-third cycles:</strong> +3 semitones; four
+notes per cycle. Example: <code>C-Eb-Gb-A-C</code>.</p>
+<h2 id="diatonic-seventh-chord-qualities-by-mode-degree">27. Diatonic
+seventh-chord qualities by mode degree</h2>
+<p>For a major key:</p>
+<p><code>Imaj7 - iim7 - iiim7 - IVmaj7 - V7 - vim7 - viim7b5</code></p>
+<p>This pattern transposes intact to every major key.</p>
+<h2 id="chord-scale-degree-priorities">28. Chord-scale degree
+priorities</h2>
+<p>For recognizing harmony quickly:</p>
+<ul>
+<li>3rd tells major vs minor.</li>
+<li>7th tells maj7 vs dominant/minor family.</li>
+<li>5th tells perfect vs diminished/augmented.</li>
+<li>9/11/13 add color after identity is established.</li>
+</ul>
+<h2 id="suggested-voicing-workflow-for-a-new-chord-symbol">29. Suggested
+voicing workflow for a new chord symbol</h2>
+<p>Given <code>Abmaj9</code>:</p>
+<ol type="1">
+<li>Root: Ab.</li>
+<li>Formula: <code>1 3 5 7 9</code>.</li>
+<li>Spell: <code>Ab C Eb G Bb</code>.</li>
+<li>First piano realization: close or comfortable spread.</li>
+<li>If bass covers root: omit Ab.</li>
+<li>If texture is muddy: omit 5 (Eb) before omitting 3 or 7.</li>
+<li>Choose inversion that creates the smoothest path from the previous
+chord.</li>
+</ol>
+<h1 id="appendix-a---all-seven-modes-in-all-12-practical-roots">Appendix
+A - All seven modes in all 12 practical roots</h1>
+<h3 id="major-ionian">Major (Ionian)</h3>
+<table>
+<thead>
+<tr>
+<th>Root</th>
+<th>Degree formula</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>C</td>
+<td>1 2 3 4 5 6 7</td>
+<td>C D E F G A B</td>
+</tr>
+<tr>
+<td>Db</td>
+<td>1 2 3 4 5 6 7</td>
+<td>Db Eb F Gb Ab Bb C</td>
+</tr>
+<tr>
+<td>D</td>
+<td>1 2 3 4 5 6 7</td>
+<td>D E F# G A B C#</td>
+</tr>
+<tr>
+<td>Eb</td>
+<td>1 2 3 4 5 6 7</td>
+<td>Eb F G Ab Bb C D</td>
+</tr>
+<tr>
+<td>E</td>
+<td>1 2 3 4 5 6 7</td>
+<td>E F# G# A B C# D#</td>
+</tr>
+<tr>
+<td>F</td>
+<td>1 2 3 4 5 6 7</td>
+<td>F G A Bb C D E</td>
+</tr>
+<tr>
+<td>F#</td>
+<td>1 2 3 4 5 6 7</td>
+<td>F# G# A# B C# D# E#</td>
+</tr>
+<tr>
+<td>G</td>
+<td>1 2 3 4 5 6 7</td>
+<td>G A B C D E F#</td>
+</tr>
+<tr>
+<td>Ab</td>
+<td>1 2 3 4 5 6 7</td>
+<td>Ab Bb C Db Eb F G</td>
+</tr>
+<tr>
+<td>A</td>
+<td>1 2 3 4 5 6 7</td>
+<td>A B C# D E F# G#</td>
+</tr>
+<tr>
+<td>Bb</td>
+<td>1 2 3 4 5 6 7</td>
+<td>Bb C D Eb F G A</td>
+</tr>
+<tr>
+<td>B</td>
+<td>1 2 3 4 5 6 7</td>
+<td>B C# D# E F# G# A#</td>
+</tr>
+</tbody>
+</table>
+<h3 id="dorian">Dorian</h3>
+<table>
+<thead>
+<tr>
+<th>Root</th>
+<th>Degree formula</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>C</td>
+<td>1 2 b3 4 5 6 b7</td>
+<td>C D Eb F G A Bb</td>
+</tr>
+<tr>
+<td>Db</td>
+<td>1 2 b3 4 5 6 b7</td>
+<td>Db Eb Fb Gb Ab Bb Cb</td>
+</tr>
+<tr>
+<td>D</td>
+<td>1 2 b3 4 5 6 b7</td>
+<td>D E F G A B C</td>
+</tr>
+<tr>
+<td>Eb</td>
+<td>1 2 b3 4 5 6 b7</td>
+<td>Eb F Gb Ab Bb C Db</td>
+</tr>
+<tr>
+<td>E</td>
+<td>1 2 b3 4 5 6 b7</td>
+<td>E F# G A B C# D</td>
+</tr>
+<tr>
+<td>F</td>
+<td>1 2 b3 4 5 6 b7</td>
+<td>F G Ab Bb C D Eb</td>
+</tr>
+<tr>
+<td>F#</td>
+<td>1 2 b3 4 5 6 b7</td>
+<td>F# G# A B C# D# E</td>
+</tr>
+<tr>
+<td>G</td>
+<td>1 2 b3 4 5 6 b7</td>
+<td>G A Bb C D E F</td>
+</tr>
+<tr>
+<td>Ab</td>
+<td>1 2 b3 4 5 6 b7</td>
+<td>Ab Bb Cb Db Eb F Gb</td>
+</tr>
+<tr>
+<td>A</td>
+<td>1 2 b3 4 5 6 b7</td>
+<td>A B C D E F# G</td>
+</tr>
+<tr>
+<td>Bb</td>
+<td>1 2 b3 4 5 6 b7</td>
+<td>Bb C Db Eb F G Ab</td>
+</tr>
+<tr>
+<td>B</td>
+<td>1 2 b3 4 5 6 b7</td>
+<td>B C# D E F# G# A</td>
+</tr>
+</tbody>
+</table>
+<h3 id="phrygian">Phrygian</h3>
+<table>
+<thead>
+<tr>
+<th>Root</th>
+<th>Degree formula</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>C</td>
+<td>1 b2 b3 4 5 b6 b7</td>
+<td>C Db Eb F G Ab Bb</td>
+</tr>
+<tr>
+<td>Db</td>
+<td>1 b2 b3 4 5 b6 b7</td>
+<td>Db Ebb Fb Gb Ab Bbb Cb</td>
+</tr>
+<tr>
+<td>D</td>
+<td>1 b2 b3 4 5 b6 b7</td>
+<td>D Eb F G A Bb C</td>
+</tr>
+<tr>
+<td>Eb</td>
+<td>1 b2 b3 4 5 b6 b7</td>
+<td>Eb Fb Gb Ab Bb Cb Db</td>
+</tr>
+<tr>
+<td>E</td>
+<td>1 b2 b3 4 5 b6 b7</td>
+<td>E F G A B C D</td>
+</tr>
+<tr>
+<td>F</td>
+<td>1 b2 b3 4 5 b6 b7</td>
+<td>F Gb Ab Bb C Db Eb</td>
+</tr>
+<tr>
+<td>F#</td>
+<td>1 b2 b3 4 5 b6 b7</td>
+<td>F# G A B C# D E</td>
+</tr>
+<tr>
+<td>G</td>
+<td>1 b2 b3 4 5 b6 b7</td>
+<td>G Ab Bb C D Eb F</td>
+</tr>
+<tr>
+<td>Ab</td>
+<td>1 b2 b3 4 5 b6 b7</td>
+<td>Ab Bbb Cb Db Eb Fb Gb</td>
+</tr>
+<tr>
+<td>A</td>
+<td>1 b2 b3 4 5 b6 b7</td>
+<td>A Bb C D E F G</td>
+</tr>
+<tr>
+<td>Bb</td>
+<td>1 b2 b3 4 5 b6 b7</td>
+<td>Bb Cb Db Eb F Gb Ab</td>
+</tr>
+<tr>
+<td>B</td>
+<td>1 b2 b3 4 5 b6 b7</td>
+<td>B C D E F# G A</td>
+</tr>
+</tbody>
+</table>
+<h3 id="lydian">Lydian</h3>
+<table>
+<thead>
+<tr>
+<th>Root</th>
+<th>Degree formula</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>C</td>
+<td>1 2 3 #4 5 6 7</td>
+<td>C D E F# G A B</td>
+</tr>
+<tr>
+<td>Db</td>
+<td>1 2 3 #4 5 6 7</td>
+<td>Db Eb F G Ab Bb C</td>
+</tr>
+<tr>
+<td>D</td>
+<td>1 2 3 #4 5 6 7</td>
+<td>D E F# G# A B C#</td>
+</tr>
+<tr>
+<td>Eb</td>
+<td>1 2 3 #4 5 6 7</td>
+<td>Eb F G A Bb C D</td>
+</tr>
+<tr>
+<td>E</td>
+<td>1 2 3 #4 5 6 7</td>
+<td>E F# G# A# B C# D#</td>
+</tr>
+<tr>
+<td>F</td>
+<td>1 2 3 #4 5 6 7</td>
+<td>F G A B C D E</td>
+</tr>
+<tr>
+<td>F#</td>
+<td>1 2 3 #4 5 6 7</td>
+<td>F# G# A# B# C# D# E#</td>
+</tr>
+<tr>
+<td>G</td>
+<td>1 2 3 #4 5 6 7</td>
+<td>G A B C# D E F#</td>
+</tr>
+<tr>
+<td>Ab</td>
+<td>1 2 3 #4 5 6 7</td>
+<td>Ab Bb C D Eb F G</td>
+</tr>
+<tr>
+<td>A</td>
+<td>1 2 3 #4 5 6 7</td>
+<td>A B C# D# E F# G#</td>
+</tr>
+<tr>
+<td>Bb</td>
+<td>1 2 3 #4 5 6 7</td>
+<td>Bb C D E F G A</td>
+</tr>
+<tr>
+<td>B</td>
+<td>1 2 3 #4 5 6 7</td>
+<td>B C# D# E# F# G# A#</td>
+</tr>
+</tbody>
+</table>
+<h3 id="mixolydian">Mixolydian</h3>
+<table>
+<thead>
+<tr>
+<th>Root</th>
+<th>Degree formula</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>C</td>
+<td>1 2 3 4 5 6 b7</td>
+<td>C D E F G A Bb</td>
+</tr>
+<tr>
+<td>Db</td>
+<td>1 2 3 4 5 6 b7</td>
+<td>Db Eb F Gb Ab Bb Cb</td>
+</tr>
+<tr>
+<td>D</td>
+<td>1 2 3 4 5 6 b7</td>
+<td>D E F# G A B C</td>
+</tr>
+<tr>
+<td>Eb</td>
+<td>1 2 3 4 5 6 b7</td>
+<td>Eb F G Ab Bb C Db</td>
+</tr>
+<tr>
+<td>E</td>
+<td>1 2 3 4 5 6 b7</td>
+<td>E F# G# A B C# D</td>
+</tr>
+<tr>
+<td>F</td>
+<td>1 2 3 4 5 6 b7</td>
+<td>F G A Bb C D Eb</td>
+</tr>
+<tr>
+<td>F#</td>
+<td>1 2 3 4 5 6 b7</td>
+<td>F# G# A# B C# D# E</td>
+</tr>
+<tr>
+<td>G</td>
+<td>1 2 3 4 5 6 b7</td>
+<td>G A B C D E F</td>
+</tr>
+<tr>
+<td>Ab</td>
+<td>1 2 3 4 5 6 b7</td>
+<td>Ab Bb C Db Eb F Gb</td>
+</tr>
+<tr>
+<td>A</td>
+<td>1 2 3 4 5 6 b7</td>
+<td>A B C# D E F# G</td>
+</tr>
+<tr>
+<td>Bb</td>
+<td>1 2 3 4 5 6 b7</td>
+<td>Bb C D Eb F G Ab</td>
+</tr>
+<tr>
+<td>B</td>
+<td>1 2 3 4 5 6 b7</td>
+<td>B C# D# E F# G# A</td>
+</tr>
+</tbody>
+</table>
+<h3 id="natural-minor-aeolian">Natural minor (Aeolian)</h3>
+<table>
+<thead>
+<tr>
+<th>Root</th>
+<th>Degree formula</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>C</td>
+<td>1 2 b3 4 5 b6 b7</td>
+<td>C D Eb F G Ab Bb</td>
+</tr>
+<tr>
+<td>Db</td>
+<td>1 2 b3 4 5 b6 b7</td>
+<td>Db Eb Fb Gb Ab Bbb Cb</td>
+</tr>
+<tr>
+<td>D</td>
+<td>1 2 b3 4 5 b6 b7</td>
+<td>D E F G A Bb C</td>
+</tr>
+<tr>
+<td>Eb</td>
+<td>1 2 b3 4 5 b6 b7</td>
+<td>Eb F Gb Ab Bb Cb Db</td>
+</tr>
+<tr>
+<td>E</td>
+<td>1 2 b3 4 5 b6 b7</td>
+<td>E F# G A B C D</td>
+</tr>
+<tr>
+<td>F</td>
+<td>1 2 b3 4 5 b6 b7</td>
+<td>F G Ab Bb C Db Eb</td>
+</tr>
+<tr>
+<td>F#</td>
+<td>1 2 b3 4 5 b6 b7</td>
+<td>F# G# A B C# D E</td>
+</tr>
+<tr>
+<td>G</td>
+<td>1 2 b3 4 5 b6 b7</td>
+<td>G A Bb C D Eb F</td>
+</tr>
+<tr>
+<td>Ab</td>
+<td>1 2 b3 4 5 b6 b7</td>
+<td>Ab Bb Cb Db Eb Fb Gb</td>
+</tr>
+<tr>
+<td>A</td>
+<td>1 2 b3 4 5 b6 b7</td>
+<td>A B C D E F G</td>
+</tr>
+<tr>
+<td>Bb</td>
+<td>1 2 b3 4 5 b6 b7</td>
+<td>Bb C Db Eb F Gb Ab</td>
+</tr>
+<tr>
+<td>B</td>
+<td>1 2 b3 4 5 b6 b7</td>
+<td>B C# D E F# G A</td>
+</tr>
+</tbody>
+</table>
+<h3 id="locrian">Locrian</h3>
+<table>
+<thead>
+<tr>
+<th>Root</th>
+<th>Degree formula</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>C</td>
+<td>1 b2 b3 4 b5 b6 b7</td>
+<td>C Db Eb F Gb Ab Bb</td>
+</tr>
+<tr>
+<td>Db</td>
+<td>1 b2 b3 4 b5 b6 b7</td>
+<td>Db Ebb Fb Gb Abb Bbb Cb</td>
+</tr>
+<tr>
+<td>D</td>
+<td>1 b2 b3 4 b5 b6 b7</td>
+<td>D Eb F G Ab Bb C</td>
+</tr>
+<tr>
+<td>Eb</td>
+<td>1 b2 b3 4 b5 b6 b7</td>
+<td>Eb Fb Gb Ab Bbb Cb Db</td>
+</tr>
+<tr>
+<td>E</td>
+<td>1 b2 b3 4 b5 b6 b7</td>
+<td>E F G A Bb C D</td>
+</tr>
+<tr>
+<td>F</td>
+<td>1 b2 b3 4 b5 b6 b7</td>
+<td>F Gb Ab Bb Cb Db Eb</td>
+</tr>
+<tr>
+<td>F#</td>
+<td>1 b2 b3 4 b5 b6 b7</td>
+<td>F# G A B C D E</td>
+</tr>
+<tr>
+<td>G</td>
+<td>1 b2 b3 4 b5 b6 b7</td>
+<td>G Ab Bb C Db Eb F</td>
+</tr>
+<tr>
+<td>Ab</td>
+<td>1 b2 b3 4 b5 b6 b7</td>
+<td>Ab Bbb Cb Db Ebb Fb Gb</td>
+</tr>
+<tr>
+<td>A</td>
+<td>1 b2 b3 4 b5 b6 b7</td>
+<td>A Bb C D Eb F G</td>
+</tr>
+<tr>
+<td>Bb</td>
+<td>1 b2 b3 4 b5 b6 b7</td>
+<td>Bb Cb Db Eb Fb Gb Ab</td>
+</tr>
+<tr>
+<td>B</td>
+<td>1 b2 b3 4 b5 b6 b7</td>
+<td>B C D E F G A</td>
+</tr>
+</tbody>
+</table>
+<h1 id="appendix-b---common-scales-in-all-12-roots">Appendix B - Common
+scales in all 12 roots</h1>
+<h3 id="major-ionian-1">Major (Ionian)</h3>
+<table>
+<thead>
+<tr>
+<th>Root</th>
+<th>Degree formula</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>C</td>
+<td>1 2 3 4 5 6 7</td>
+<td>C D E F G A B</td>
+</tr>
+<tr>
+<td>Db</td>
+<td>1 2 3 4 5 6 7</td>
+<td>Db Eb F Gb Ab Bb C</td>
+</tr>
+<tr>
+<td>D</td>
+<td>1 2 3 4 5 6 7</td>
+<td>D E F# G A B C#</td>
+</tr>
+<tr>
+<td>Eb</td>
+<td>1 2 3 4 5 6 7</td>
+<td>Eb F G Ab Bb C D</td>
+</tr>
+<tr>
+<td>E</td>
+<td>1 2 3 4 5 6 7</td>
+<td>E F# G# A B C# D#</td>
+</tr>
+<tr>
+<td>F</td>
+<td>1 2 3 4 5 6 7</td>
+<td>F G A Bb C D E</td>
+</tr>
+<tr>
+<td>F#</td>
+<td>1 2 3 4 5 6 7</td>
+<td>F# G# A# B C# D# E#</td>
+</tr>
+<tr>
+<td>G</td>
+<td>1 2 3 4 5 6 7</td>
+<td>G A B C D E F#</td>
+</tr>
+<tr>
+<td>Ab</td>
+<td>1 2 3 4 5 6 7</td>
+<td>Ab Bb C Db Eb F G</td>
+</tr>
+<tr>
+<td>A</td>
+<td>1 2 3 4 5 6 7</td>
+<td>A B C# D E F# G#</td>
+</tr>
+<tr>
+<td>Bb</td>
+<td>1 2 3 4 5 6 7</td>
+<td>Bb C D Eb F G A</td>
+</tr>
+<tr>
+<td>B</td>
+<td>1 2 3 4 5 6 7</td>
+<td>B C# D# E F# G# A#</td>
+</tr>
+</tbody>
+</table>
+<h3 id="natural-minor-aeolian-1">Natural minor (Aeolian)</h3>
+<table>
+<thead>
+<tr>
+<th>Root</th>
+<th>Degree formula</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>C</td>
+<td>1 2 b3 4 5 b6 b7</td>
+<td>C D Eb F G Ab Bb</td>
+</tr>
+<tr>
+<td>Db</td>
+<td>1 2 b3 4 5 b6 b7</td>
+<td>Db Eb Fb Gb Ab Bbb Cb</td>
+</tr>
+<tr>
+<td>D</td>
+<td>1 2 b3 4 5 b6 b7</td>
+<td>D E F G A Bb C</td>
+</tr>
+<tr>
+<td>Eb</td>
+<td>1 2 b3 4 5 b6 b7</td>
+<td>Eb F Gb Ab Bb Cb Db</td>
+</tr>
+<tr>
+<td>E</td>
+<td>1 2 b3 4 5 b6 b7</td>
+<td>E F# G A B C D</td>
+</tr>
+<tr>
+<td>F</td>
+<td>1 2 b3 4 5 b6 b7</td>
+<td>F G Ab Bb C Db Eb</td>
+</tr>
+<tr>
+<td>F#</td>
+<td>1 2 b3 4 5 b6 b7</td>
+<td>F# G# A B C# D E</td>
+</tr>
+<tr>
+<td>G</td>
+<td>1 2 b3 4 5 b6 b7</td>
+<td>G A Bb C D Eb F</td>
+</tr>
+<tr>
+<td>Ab</td>
+<td>1 2 b3 4 5 b6 b7</td>
+<td>Ab Bb Cb Db Eb Fb Gb</td>
+</tr>
+<tr>
+<td>A</td>
+<td>1 2 b3 4 5 b6 b7</td>
+<td>A B C D E F G</td>
+</tr>
+<tr>
+<td>Bb</td>
+<td>1 2 b3 4 5 b6 b7</td>
+<td>Bb C Db Eb F Gb Ab</td>
+</tr>
+<tr>
+<td>B</td>
+<td>1 2 b3 4 5 b6 b7</td>
+<td>B C# D E F# G A</td>
+</tr>
+</tbody>
+</table>
+<h3 id="harmonic-minor">Harmonic minor</h3>
+<table>
+<thead>
+<tr>
+<th>Root</th>
+<th>Degree formula</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>C</td>
+<td>1 2 b3 4 5 b6 7</td>
+<td>C D Eb F G Ab B</td>
+</tr>
+<tr>
+<td>Db</td>
+<td>1 2 b3 4 5 b6 7</td>
+<td>Db Eb Fb Gb Ab Bbb C</td>
+</tr>
+<tr>
+<td>D</td>
+<td>1 2 b3 4 5 b6 7</td>
+<td>D E F G A Bb C#</td>
+</tr>
+<tr>
+<td>Eb</td>
+<td>1 2 b3 4 5 b6 7</td>
+<td>Eb F Gb Ab Bb Cb D</td>
+</tr>
+<tr>
+<td>E</td>
+<td>1 2 b3 4 5 b6 7</td>
+<td>E F# G A B C D#</td>
+</tr>
+<tr>
+<td>F</td>
+<td>1 2 b3 4 5 b6 7</td>
+<td>F G Ab Bb C Db E</td>
+</tr>
+<tr>
+<td>F#</td>
+<td>1 2 b3 4 5 b6 7</td>
+<td>F# G# A B C# D E#</td>
+</tr>
+<tr>
+<td>G</td>
+<td>1 2 b3 4 5 b6 7</td>
+<td>G A Bb C D Eb F#</td>
+</tr>
+<tr>
+<td>Ab</td>
+<td>1 2 b3 4 5 b6 7</td>
+<td>Ab Bb Cb Db Eb Fb G</td>
+</tr>
+<tr>
+<td>A</td>
+<td>1 2 b3 4 5 b6 7</td>
+<td>A B C D E F G#</td>
+</tr>
+<tr>
+<td>Bb</td>
+<td>1 2 b3 4 5 b6 7</td>
+<td>Bb C Db Eb F Gb A</td>
+</tr>
+<tr>
+<td>B</td>
+<td>1 2 b3 4 5 b6 7</td>
+<td>B C# D E F# G A#</td>
+</tr>
+</tbody>
+</table>
+<h3 id="melodic-minor-ascending">Melodic minor (ascending)</h3>
+<table>
+<thead>
+<tr>
+<th>Root</th>
+<th>Degree formula</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>C</td>
+<td>1 2 b3 4 5 6 7</td>
+<td>C D Eb F G A B</td>
+</tr>
+<tr>
+<td>Db</td>
+<td>1 2 b3 4 5 6 7</td>
+<td>Db Eb Fb Gb Ab Bb C</td>
+</tr>
+<tr>
+<td>D</td>
+<td>1 2 b3 4 5 6 7</td>
+<td>D E F G A B C#</td>
+</tr>
+<tr>
+<td>Eb</td>
+<td>1 2 b3 4 5 6 7</td>
+<td>Eb F Gb Ab Bb C D</td>
+</tr>
+<tr>
+<td>E</td>
+<td>1 2 b3 4 5 6 7</td>
+<td>E F# G A B C# D#</td>
+</tr>
+<tr>
+<td>F</td>
+<td>1 2 b3 4 5 6 7</td>
+<td>F G Ab Bb C D E</td>
+</tr>
+<tr>
+<td>F#</td>
+<td>1 2 b3 4 5 6 7</td>
+<td>F# G# A B C# D# E#</td>
+</tr>
+<tr>
+<td>G</td>
+<td>1 2 b3 4 5 6 7</td>
+<td>G A Bb C D E F#</td>
+</tr>
+<tr>
+<td>Ab</td>
+<td>1 2 b3 4 5 6 7</td>
+<td>Ab Bb Cb Db Eb F G</td>
+</tr>
+<tr>
+<td>A</td>
+<td>1 2 b3 4 5 6 7</td>
+<td>A B C D E F# G#</td>
+</tr>
+<tr>
+<td>Bb</td>
+<td>1 2 b3 4 5 6 7</td>
+<td>Bb C Db Eb F G A</td>
+</tr>
+<tr>
+<td>B</td>
+<td>1 2 b3 4 5 6 7</td>
+<td>B C# D E F# G# A#</td>
+</tr>
+</tbody>
+</table>
+<h3 id="major-pentatonic">Major pentatonic</h3>
+<table>
+<thead>
+<tr>
+<th>Root</th>
+<th>Degree formula</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>C</td>
+<td>1 2 3 5 6</td>
+<td>C D E G A</td>
+</tr>
+<tr>
+<td>Db</td>
+<td>1 2 3 5 6</td>
+<td>Db Eb F Ab Bb</td>
+</tr>
+<tr>
+<td>D</td>
+<td>1 2 3 5 6</td>
+<td>D E F# A B</td>
+</tr>
+<tr>
+<td>Eb</td>
+<td>1 2 3 5 6</td>
+<td>Eb F G Bb C</td>
+</tr>
+<tr>
+<td>E</td>
+<td>1 2 3 5 6</td>
+<td>E F# G# B C#</td>
+</tr>
+<tr>
+<td>F</td>
+<td>1 2 3 5 6</td>
+<td>F G A C D</td>
+</tr>
+<tr>
+<td>F#</td>
+<td>1 2 3 5 6</td>
+<td>F# G# A# C# D#</td>
+</tr>
+<tr>
+<td>G</td>
+<td>1 2 3 5 6</td>
+<td>G A B D E</td>
+</tr>
+<tr>
+<td>Ab</td>
+<td>1 2 3 5 6</td>
+<td>Ab Bb C Eb F</td>
+</tr>
+<tr>
+<td>A</td>
+<td>1 2 3 5 6</td>
+<td>A B C# E F#</td>
+</tr>
+<tr>
+<td>Bb</td>
+<td>1 2 3 5 6</td>
+<td>Bb C D F G</td>
+</tr>
+<tr>
+<td>B</td>
+<td>1 2 3 5 6</td>
+<td>B C# D# F# G#</td>
+</tr>
+</tbody>
+</table>
+<h3 id="minor-pentatonic">Minor pentatonic</h3>
+<table>
+<thead>
+<tr>
+<th>Root</th>
+<th>Degree formula</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>C</td>
+<td>1 b3 4 5 b7</td>
+<td>C Eb F G Bb</td>
+</tr>
+<tr>
+<td>Db</td>
+<td>1 b3 4 5 b7</td>
+<td>Db Fb Gb Ab Cb</td>
+</tr>
+<tr>
+<td>D</td>
+<td>1 b3 4 5 b7</td>
+<td>D F G A C</td>
+</tr>
+<tr>
+<td>Eb</td>
+<td>1 b3 4 5 b7</td>
+<td>Eb Gb Ab Bb Db</td>
+</tr>
+<tr>
+<td>E</td>
+<td>1 b3 4 5 b7</td>
+<td>E G A B D</td>
+</tr>
+<tr>
+<td>F</td>
+<td>1 b3 4 5 b7</td>
+<td>F Ab Bb C Eb</td>
+</tr>
+<tr>
+<td>F#</td>
+<td>1 b3 4 5 b7</td>
+<td>F# A B C# E</td>
+</tr>
+<tr>
+<td>G</td>
+<td>1 b3 4 5 b7</td>
+<td>G Bb C D F</td>
+</tr>
+<tr>
+<td>Ab</td>
+<td>1 b3 4 5 b7</td>
+<td>Ab Cb Db Eb Gb</td>
+</tr>
+<tr>
+<td>A</td>
+<td>1 b3 4 5 b7</td>
+<td>A C D E G</td>
+</tr>
+<tr>
+<td>Bb</td>
+<td>1 b3 4 5 b7</td>
+<td>Bb Db Eb F Ab</td>
+</tr>
+<tr>
+<td>B</td>
+<td>1 b3 4 5 b7</td>
+<td>B D E F# A</td>
+</tr>
+</tbody>
+</table>
+<h3 id="minor-blues">Minor blues</h3>
+<table>
+<thead>
+<tr>
+<th>Root</th>
+<th>Degree formula</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>C</td>
+<td>1 b3 4 b5 5 b7</td>
+<td>C Eb F Gb G Bb</td>
+</tr>
+<tr>
+<td>Db</td>
+<td>1 b3 4 b5 5 b7</td>
+<td>Db Fb Gb Abb Ab Cb</td>
+</tr>
+<tr>
+<td>D</td>
+<td>1 b3 4 b5 5 b7</td>
+<td>D F G Ab A C</td>
+</tr>
+<tr>
+<td>Eb</td>
+<td>1 b3 4 b5 5 b7</td>
+<td>Eb Gb Ab Bbb Bb Db</td>
+</tr>
+<tr>
+<td>E</td>
+<td>1 b3 4 b5 5 b7</td>
+<td>E G A Bb B D</td>
+</tr>
+<tr>
+<td>F</td>
+<td>1 b3 4 b5 5 b7</td>
+<td>F Ab Bb Cb C Eb</td>
+</tr>
+<tr>
+<td>F#</td>
+<td>1 b3 4 b5 5 b7</td>
+<td>F# A B C C# E</td>
+</tr>
+<tr>
+<td>G</td>
+<td>1 b3 4 b5 5 b7</td>
+<td>G Bb C Db D F</td>
+</tr>
+<tr>
+<td>Ab</td>
+<td>1 b3 4 b5 5 b7</td>
+<td>Ab Cb Db Ebb Eb Gb</td>
+</tr>
+<tr>
+<td>A</td>
+<td>1 b3 4 b5 5 b7</td>
+<td>A C D Eb E G</td>
+</tr>
+<tr>
+<td>Bb</td>
+<td>1 b3 4 b5 5 b7</td>
+<td>Bb Db Eb Fb F Ab</td>
+</tr>
+<tr>
+<td>B</td>
+<td>1 b3 4 b5 5 b7</td>
+<td>B D E F F# A</td>
+</tr>
+</tbody>
+</table>
+<h3 id="whole-tone">Whole tone</h3>
+<table>
+<thead>
+<tr>
+<th>Root</th>
+<th>Degree formula</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>C</td>
+<td>1 2 3 #4 #5 b7</td>
+<td>C D E F# G# Bb</td>
+</tr>
+<tr>
+<td>Db</td>
+<td>1 2 3 #4 #5 b7</td>
+<td>Db Eb F G A Cb</td>
+</tr>
+<tr>
+<td>D</td>
+<td>1 2 3 #4 #5 b7</td>
+<td>D E F# G# A# C</td>
+</tr>
+<tr>
+<td>Eb</td>
+<td>1 2 3 #4 #5 b7</td>
+<td>Eb F G A B Db</td>
+</tr>
+<tr>
+<td>E</td>
+<td>1 2 3 #4 #5 b7</td>
+<td>E F# G# A# B# D</td>
+</tr>
+<tr>
+<td>F</td>
+<td>1 2 3 #4 #5 b7</td>
+<td>F G A B C# Eb</td>
+</tr>
+<tr>
+<td>F#</td>
+<td>1 2 3 #4 #5 b7</td>
+<td>F# G# A# B# C## E</td>
+</tr>
+<tr>
+<td>G</td>
+<td>1 2 3 #4 #5 b7</td>
+<td>G A B C# D# F</td>
+</tr>
+<tr>
+<td>Ab</td>
+<td>1 2 3 #4 #5 b7</td>
+<td>Ab Bb C D E Gb</td>
+</tr>
+<tr>
+<td>A</td>
+<td>1 2 3 #4 #5 b7</td>
+<td>A B C# D# E# G</td>
+</tr>
+<tr>
+<td>Bb</td>
+<td>1 2 3 #4 #5 b7</td>
+<td>Bb C D E F# Ab</td>
+</tr>
+<tr>
+<td>B</td>
+<td>1 2 3 #4 #5 b7</td>
+<td>B C# D# E# F## A</td>
+</tr>
+</tbody>
+</table>
+<h1 id="appendix-c---chord-spelling-tables">Appendix C - Chord spelling
+tables</h1>
+<h2 id="triads-in-all-12-roots">Triads in all 12 roots</h2>
+<table class="wide">
+<colgroup>
+<col style="width: 20%"/>
+<col style="width: 20%"/>
+<col style="width: 20%"/>
+<col style="width: 20%"/>
+<col style="width: 20%"/>
+</colgroup>
+<thead>
+<tr>
+<th>Root</th>
+<th>Major triad</th>
+<th>Minor triad</th>
+<th>Diminished triad</th>
+<th>Augmented triad</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>C</td>
+<td>C E G</td>
+<td>C Eb G</td>
+<td>C Eb Gb</td>
+<td>C E G#</td>
+</tr>
+<tr>
+<td>Db</td>
+<td>Db F Ab</td>
+<td>Db Fb Ab</td>
+<td>Db Fb Abb</td>
+<td>Db F A</td>
+</tr>
+<tr>
+<td>D</td>
+<td>D F# A</td>
+<td>D F A</td>
+<td>D F Ab</td>
+<td>D F# A#</td>
+</tr>
+<tr>
+<td>Eb</td>
+<td>Eb G Bb</td>
+<td>Eb Gb Bb</td>
+<td>Eb Gb Bbb</td>
+<td>Eb G B</td>
+</tr>
+<tr>
+<td>E</td>
+<td>E G# B</td>
+<td>E G B</td>
+<td>E G Bb</td>
+<td>E G# B#</td>
+</tr>
+<tr>
+<td>F</td>
+<td>F A C</td>
+<td>F Ab C</td>
+<td>F Ab Cb</td>
+<td>F A C#</td>
+</tr>
+<tr>
+<td>F#</td>
+<td>F# A# C#</td>
+<td>F# A C#</td>
+<td>F# A C</td>
+<td>F# A# C##</td>
+</tr>
+<tr>
+<td>G</td>
+<td>G B D</td>
+<td>G Bb D</td>
+<td>G Bb Db</td>
+<td>G B D#</td>
+</tr>
+<tr>
+<td>Ab</td>
+<td>Ab C Eb</td>
+<td>Ab Cb Eb</td>
+<td>Ab Cb Ebb</td>
+<td>Ab C E</td>
+</tr>
+<tr>
+<td>A</td>
+<td>A C# E</td>
+<td>A C E</td>
+<td>A C Eb</td>
+<td>A C# E#</td>
+</tr>
+<tr>
+<td>Bb</td>
+<td>Bb D F</td>
+<td>Bb Db F</td>
+<td>Bb Db Fb</td>
+<td>Bb D F#</td>
+</tr>
+<tr>
+<td>B</td>
+<td>B D# F#</td>
+<td>B D F#</td>
+<td>B D F</td>
+<td>B D# F##</td>
+</tr>
+</tbody>
+</table>
+<h2 id="seventh-chords-in-all-12-roots">Seventh chords in all 12
+roots</h2>
+<div class="reference-subtable"><p class="table-subhead">Major, dominant and minor seventh chords</p><table class="split-chords"><thead><tr><th>Root</th><th>Major 7</th><th>Dominant 7</th><th>Minor 7</th></tr></thead><tbody><tr><td>C</td><td>C E G B</td><td>C E G Bb</td><td>C Eb G Bb</td></tr><tr><td>Db</td><td>Db F Ab C</td><td>Db F Ab Cb</td><td>Db Fb Ab Cb</td></tr><tr><td>D</td><td>D F# A C#</td><td>D F# A C</td><td>D F A C</td></tr><tr><td>Eb</td><td>Eb G Bb D</td><td>Eb G Bb Db</td><td>Eb Gb Bb Db</td></tr><tr><td>E</td><td>E G# B D#</td><td>E G# B D</td><td>E G B D</td></tr><tr><td>F</td><td>F A C E</td><td>F A C Eb</td><td>F Ab C Eb</td></tr><tr><td>F#</td><td>F# A# C# E#</td><td>F# A# C# E</td><td>F# A C# E</td></tr><tr><td>G</td><td>G B D F#</td><td>G B D F</td><td>G Bb D F</td></tr><tr><td>Ab</td><td>Ab C Eb G</td><td>Ab C Eb Gb</td><td>Ab Cb Eb Gb</td></tr><tr><td>A</td><td>A C# E G#</td><td>A C# E G</td><td>A C E G</td></tr><tr><td>Bb</td><td>Bb D F A</td><td>Bb D F Ab</td><td>Bb Db F Ab</td></tr><tr><td>B</td><td>B D# F# A#</td><td>B D# F# A</td><td>B D F# A</td></tr></tbody></table></div><div class="reference-subtable"><p class="table-subhead">Half-diminished and diminished seventh chords</p><table class="split-chords"><thead><tr><th>Root</th><th>Half-diminished 7</th><th>Diminished 7</th></tr></thead><tbody><tr><td>C</td><td>C Eb Gb Bb</td><td>C Eb Gb Bbb</td></tr><tr><td>Db</td><td>Db Fb Abb Cb</td><td>Db Fb Abb Cbb</td></tr><tr><td>D</td><td>D F Ab C</td><td>D F Ab Cb</td></tr><tr><td>Eb</td><td>Eb Gb Bbb Db</td><td>Eb Gb Bbb Dbb</td></tr><tr><td>E</td><td>E G Bb D</td><td>E G Bb Db</td></tr><tr><td>F</td><td>F Ab Cb Eb</td><td>F Ab Cb Ebb</td></tr><tr><td>F#</td><td>F# A C E</td><td>F# A C Eb</td></tr><tr><td>G</td><td>G Bb Db F</td><td>G Bb Db Fb</td></tr><tr><td>Ab</td><td>Ab Cb Ebb Gb</td><td>Ab Cb Ebb Gbb</td></tr><tr><td>A</td><td>A C Eb G</td><td>A C Eb Gb</td></tr><tr><td>Bb</td><td>Bb Db Fb Ab</td><td>Bb Db Fb Abb</td></tr><tr><td>B</td><td>B D F A</td><td>B D F Ab</td></tr></tbody></table></div>
+<h1 id="appendix-d---progressions-in-all-keys">Appendix D - Progressions
+in all keys</h1>
+<h2 id="major-ii-v-i">Major ii-V-I</h2>
+<table class="wide">
+<thead>
+<tr>
+<th>Key</th>
+<th>ii</th>
+<th>V</th>
+<th>I</th>
+<th>Degrees</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>C</td>
+<td>Dm7</td>
+<td>G7</td>
+<td>Cmaj7</td>
+<td>2-5-1</td>
+</tr>
+<tr>
+<td>Db</td>
+<td>Ebm7</td>
+<td>Ab7</td>
+<td>Dbmaj7</td>
+<td>2-5-1</td>
+</tr>
+<tr>
+<td>D</td>
+<td>Em7</td>
+<td>A7</td>
+<td>Dmaj7</td>
+<td>2-5-1</td>
+</tr>
+<tr>
+<td>Eb</td>
+<td>Fm7</td>
+<td>Bb7</td>
+<td>Ebmaj7</td>
+<td>2-5-1</td>
+</tr>
+<tr>
+<td>E</td>
+<td>F#m7</td>
+<td>B7</td>
+<td>Emaj7</td>
+<td>2-5-1</td>
+</tr>
+<tr>
+<td>F</td>
+<td>Gm7</td>
+<td>C7</td>
+<td>Fmaj7</td>
+<td>2-5-1</td>
+</tr>
+<tr>
+<td>F#</td>
+<td>G#m7</td>
+<td>C#7</td>
+<td>F#maj7</td>
+<td>2-5-1</td>
+</tr>
+<tr>
+<td>G</td>
+<td>Am7</td>
+<td>D7</td>
+<td>Gmaj7</td>
+<td>2-5-1</td>
+</tr>
+<tr>
+<td>Ab</td>
+<td>Bbm7</td>
+<td>Eb7</td>
+<td>Abmaj7</td>
+<td>2-5-1</td>
+</tr>
+<tr>
+<td>A</td>
+<td>Bm7</td>
+<td>E7</td>
+<td>Amaj7</td>
+<td>2-5-1</td>
+</tr>
+<tr>
+<td>Bb</td>
+<td>Cm7</td>
+<td>F7</td>
+<td>Bbmaj7</td>
+<td>2-5-1</td>
+</tr>
+<tr>
+<td>B</td>
+<td>C#m7</td>
+<td>F#7</td>
+<td>Bmaj7</td>
+<td>2-5-1</td>
+</tr>
+</tbody>
+</table>
+<h2 id="minor-i-bvi-biii-bvii">Minor <code>i-bVI-bIII-bVII</code></h2>
+<table class="wide">
+<thead>
+<tr>
+<th>Key</th>
+<th>i</th>
+<th>bVI</th>
+<th>bIII</th>
+<th>bVII</th>
+<th>Degrees</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>C minor</td>
+<td>Cm</td>
+<td>Ab</td>
+<td>Eb</td>
+<td>Bb</td>
+<td>1-b6-b3-b7</td>
+</tr>
+<tr>
+<td>Db minor</td>
+<td>Dbm</td>
+<td>Bbb</td>
+<td>Fb</td>
+<td>Cb</td>
+<td>1-b6-b3-b7</td>
+</tr>
+<tr>
+<td>D minor</td>
+<td>Dm</td>
+<td>Bb</td>
+<td>F</td>
+<td>C</td>
+<td>1-b6-b3-b7</td>
+</tr>
+<tr>
+<td>Eb minor</td>
+<td>Ebm</td>
+<td>Cb</td>
+<td>Gb</td>
+<td>Db</td>
+<td>1-b6-b3-b7</td>
+</tr>
+<tr>
+<td>E minor</td>
+<td>Em</td>
+<td>C</td>
+<td>G</td>
+<td>D</td>
+<td>1-b6-b3-b7</td>
+</tr>
+<tr>
+<td>F minor</td>
+<td>Fm</td>
+<td>Db</td>
+<td>Ab</td>
+<td>Eb</td>
+<td>1-b6-b3-b7</td>
+</tr>
+<tr>
+<td>F# minor</td>
+<td>F#m</td>
+<td>D</td>
+<td>A</td>
+<td>E</td>
+<td>1-b6-b3-b7</td>
+</tr>
+<tr>
+<td>G minor</td>
+<td>Gm</td>
+<td>Eb</td>
+<td>Bb</td>
+<td>F</td>
+<td>1-b6-b3-b7</td>
+</tr>
+<tr>
+<td>Ab minor</td>
+<td>Abm</td>
+<td>Fb</td>
+<td>Cb</td>
+<td>Gb</td>
+<td>1-b6-b3-b7</td>
+</tr>
+<tr>
+<td>A minor</td>
+<td>Am</td>
+<td>F</td>
+<td>C</td>
+<td>G</td>
+<td>1-b6-b3-b7</td>
+</tr>
+<tr>
+<td>Bb minor</td>
+<td>Bbm</td>
+<td>Gb</td>
+<td>Db</td>
+<td>Ab</td>
+<td>1-b6-b3-b7</td>
+</tr>
+<tr>
+<td>B minor</td>
+<td>Bm</td>
+<td>G</td>
+<td>D</td>
+<td>A</td>
+<td>1-b6-b3-b7</td>
+</tr>
+</tbody>
+</table>
+<h1 id="appendix-e---drill-cards">Appendix E - Drill cards</h1>
+<h2 id="card-1---random-root-random-interval">Card 1 - Random root,
+random interval</h2>
+<p>Choose a root and one of: <code>b2 2 b3 3 4 #4 5 b6 6 b7 7</code>.
+Say the target note, then play it.</p>
+<h2 id="card-2---random-root-random-chord">Card 2 - Random root, random
+chord</h2>
+<p>Choose a root and one of: major, minor, diminished, augmented, maj7,
+7, m7, m7b5. Say formula, spell notes, play root position, then nearest
+inversion from the previous chord.</p>
+<h2 id="card-3---mode-mutation">Card 3 - Mode mutation</h2>
+<p>Start with major. Change exactly one degree at a time:</p>
+<ul>
+<li>Major → Mixolydian: lower 7.</li>
+<li>Major → Lydian: raise 4.</li>
+<li>Natural minor → Dorian: raise 6.</li>
+<li>Natural minor → Phrygian: lower 2.</li>
+<li>Natural minor → Locrian: lower 2 and 5.</li>
+</ul>
+<p>Hear the changed degree deliberately.</p>
+<h2 id="card-4---instrument-translation">Card 4 - Instrument
+translation</h2>
+<p>Play a structure on guitar or Push/Note. Do not look at piano. State
+its degree formula. Then realize it on piano in three keys.</p>
+<h2 id="card-5---black-key-first">Card 5 - Black-key first</h2>
+<p>Begin every drill in Db, Gb, Ab, Eb, or B. C major is allowed only
+after two non-white-heavy keys.</p>
+<h1 id="appendix-f---negative-harmony">Appendix F - Negative
+harmony</h1>
+<p>Negative harmony is best treated as a <strong>pitch-class reflection
+technique for composition and reharmonization</strong>, not as a claim
+that every mirrored chord will function identically in every musical
+context. The practical form used here is associated with Ernst Levy’s
+theory of harmonic polarity and with later popularizations of the term
+“negative harmony.”</p>
+<h2 id="f.1-the-common-tonic-dominant-axis">F.1 The common
+tonic-dominant axis</h2>
+<p>For a tonic with pitch class <code>T</code> (where C=0, C#=1, …
+B=11), take the dominant at <code>T+7</code>. Reflect every pitch
+<code>p</code> around the midpoint of tonic and dominant:</p>
+<p><code>N(p) = 2T + 7 - p  (mod 12)</code></p>
+<p>For C, <code>T=0</code>, so:</p>
+<p><code>N(p) = 7 - p  (mod 12)</code></p>
+<figure>
+<img alt="Negative-harmony pitch-class mirror in C" src="../../assets/negative_harmony_axis.svg"/>
+<figcaption aria-hidden="true">Negative-harmony pitch-class mirror in
+C</figcaption>
+</figure>
+<p>The resulting pitch-class pairs are:</p>
+<table class="wide">
+<thead>
+<tr>
+<th>Positive</th>
+<th>Negative</th>
+<th>Positive</th>
+<th>Negative</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>C</td>
+<td>G</td>
+<td>G</td>
+<td>C</td>
+</tr>
+<tr>
+<td>C#/Db</td>
+<td>F#/Gb</td>
+<td>F#/Gb</td>
+<td>C#/Db</td>
+</tr>
+<tr>
+<td>D</td>
+<td>F</td>
+<td>F</td>
+<td>D</td>
+</tr>
+<tr>
+<td>Eb</td>
+<td>E</td>
+<td>E</td>
+<td>Eb</td>
+</tr>
+<tr>
+<td>Ab</td>
+<td>B</td>
+<td>B</td>
+<td>Ab</td>
+</tr>
+<tr>
+<td>A</td>
+<td>Bb</td>
+<td>Bb</td>
+<td>A</td>
+</tr>
+</tbody>
+</table>
+<p>Because reflection reverses interval direction, note order is usually
+normalized after the mapping so the result can be read as an ordinary
+chord or scale.</p>
+<h2 id="f.2-major-becomes-minor-around-the-same-tonal-center">F.2 Major
+becomes minor around the same tonal center</h2>
+<p>Reflect C major:</p>
+<p><code>C E G → G Eb C → C Eb G = Cm</code></p>
+<figure>
+<img alt="C major before reflection" src="../../assets/negative_c_major.svg"/>
+<figcaption aria-hidden="true">C major before reflection</figcaption>
+</figure>
+<figure>
+<img alt="C minor after reflection" src="../../assets/negative_c_minor.svg"/>
+<figcaption aria-hidden="true">C minor after reflection</figcaption>
+</figure>
+<p>Reflecting the C-major scale gives the pitch collection of C natural
+minor:</p>
+<p><code>C D E F G A B → G F Eb D C Bb Ab</code></p>
+<p>Reordered from C:</p>
+<p><code>C D Eb F G Ab Bb</code></p>
+<p>This does <strong>not</strong> mean that major and natural minor are
+interchangeable; it means the reflection maps one collection to the
+other under this chosen axis.</p>
+<h2 id="f.3-chord-examples-in-c">F.3 Chord examples in C</h2>
+<table class="wide">
+<thead>
+<tr>
+<th>Positive harmony</th>
+<th>Pitches</th>
+<th>Negative image</th>
+<th>Equivalent spelling</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>C major (I)</td>
+<td>C E G</td>
+<td>G Eb C</td>
+<td>C minor (i)</td>
+</tr>
+<tr>
+<td>D minor (ii)</td>
+<td>D F A</td>
+<td>F D Bb</td>
+<td>Bb major (bVII)</td>
+</tr>
+<tr>
+<td>E minor (iii)</td>
+<td>E G B</td>
+<td>Eb C Ab</td>
+<td>Ab major (bVI)</td>
+</tr>
+<tr>
+<td>F major (IV)</td>
+<td>F A C</td>
+<td>D Bb G</td>
+<td>G minor (v)</td>
+</tr>
+<tr>
+<td>G major (V)</td>
+<td>G B D</td>
+<td>C Ab F</td>
+<td>F minor (iv)</td>
+</tr>
+<tr>
+<td>A minor (vi)</td>
+<td>A C E</td>
+<td>Bb G Eb</td>
+<td>Eb major (bIII)</td>
+</tr>
+<tr>
+<td>B diminished (vii dim)</td>
+<td>B D F</td>
+<td>Ab F D</td>
+<td>D diminished (ii dim)</td>
+</tr>
+</tbody>
+</table>
+<p>A particularly useful dominant example is:</p>
+<p><code>G7 = G B D F → C Ab F D = D F Ab C = Dm7b5</code></p>
+<p>The same pitch set can be heard or voiced as
+<code>Fm6 = F Ab C D</code>. This is one reason the minor-subdominant
+family appears naturally in negative-harmony demonstrations.</p>
+<h2 id="f.4-a-practical-reharmonization-workflow">F.4 A practical
+reharmonization workflow</h2>
+<ol type="1">
+<li>Choose a tonal center and keep the axis fixed for the passage.</li>
+<li>Reduce the source chord or melody to actual pitch classes; do not
+transform only the chord symbol.</li>
+<li>Reflect each pitch using the mapping table or formula.</li>
+<li>Reorder the resulting pitch set into a readable chord.</li>
+<li>Choose an inversion/voicing that preserves useful voice
+leading.</li>
+<li>Listen for function. Keep, alter, or reject the result according to
+the music rather than the transformation alone.</li>
+</ol>
+<h3 id="exercise-f1---mirror-a-cadence">Exercise F1 - Mirror a
+cadence</h3>
+<p>In C major, transform:</p>
+<p><code>Dm7 → G7 → Cmaj7</code></p>
+<p>Map every chord tone. Then voice the negative sequence on piano with
+the smallest possible motion. Compare the original and transformed bass
+motion, tendency tones, and final sense of arrival.</p>
+<h3 id="exercise-f2---mirror-a-melody-then-reharmonize">Exercise F2 -
+Mirror a melody, then reharmonize</h3>
+<p>Write a four-bar melody in C major. Reflect every pitch through the
+C/G axis. Keep the rhythm unchanged. First play the mirrored melody over
+a C pedal; then harmonize it by ear. Only after that, compare the result
+with mechanically reflected chords.</p>
+<h3 id="exercise-f3---transpose-the-method">Exercise F3 - Transpose the
+method</h3>
+<p>Repeat the operation in Db, E, F#, and Ab. Do <strong>not</strong>
+memorize a C-only table. Use the general formula or construct the
+tonic/dominant axis in the new key.</p>
+<h2 id="f.5-limits-and-variants">F.5 Limits and variants</h2>
+<ul>
+<li>The tonic/dominant midpoint is a common practical convention, but
+inversion axes can be chosen differently for other compositional
+purposes.</li>
+<li>Enharmonic spelling after reflection is analytical rather than
+purely mechanical. Choose spellings that make the resulting harmony
+readable in context.</li>
+<li>Negative harmony preserves a mathematical symmetry, not every
+psychoacoustic, stylistic, or historical property of tonal
+function.</li>
+<li>It is most useful as a generator of alternatives: mirrored melodies,
+modal mixture, minor-subdominant colors, contrary motion, and
+voice-leading experiments.</li>
+</ul>
+<h1 id="appendix-g---sources-and-product-layout-notes">Appendix G -
+Sources and product-layout notes</h1>
+<p>This manual’s general theory material is standard Western tonal/modal
+theory. Product-layout descriptions were checked against current Ableton
+documentation in September 2026.</p>
+<ul>
+<li>Ableton Push 3 Reference Manual:
+<a href="https://www.ableton.com/en/push/manual/">https://www.ableton.com/en/push/manual/</a></li>
+<li>Ableton Push manual/help index:
+<a href="https://help.ableton.com/hc/en-us/articles/206328564-Push-User-Manual">https://help.ableton.com/hc/en-us/articles/206328564-Push-User-Manual</a></li>
+<li>Ableton Note Manual: <a href="https://www.ableton.com/en/note/manual/">https://www.ableton.com/en/note/manual/</a></li>
+<li>Ernst Levy, <em>A Theory of Harmony</em> (conceptual source for
+harmonic polarity / negative-harmony practice).</li>
+</ul>
+<p>For Push and Note, this edition intentionally depicts
+<strong>Chromatic mode only</strong>. Push diagrams use the chromatic
+fourths geometry as the main comparison with guitar; Note diagrams use
+Chromatic/Fourths with In Key disabled. Scale tones may be visually
+emphasized, but no out-of-scale pitch is removed.</p>
+<p>The Push, Note, piano, guitar, circle, voice-leading, and
+negative-harmony figures are original teaching diagrams, not screenshots
+of product interfaces.</p>
+<section class="finale"><h1 id="one-page-philosophy">One-page philosophy</h1>
+<p>The piano does not need to become isomorphic for transposition to
+become immediate.</p>
+<p>Your invariant representation is:</p>
+<p><code>function → pitch spelling → register → instrument geometry</code></p>
+<p>A guitarist often encounters instrument geometry first because
+movable shapes can encode function while moving the whole sounding
+object through register. The aim is not to discard that motor knowledge,
+but to be able to move in both directions: from geometry back to
+function, spelling, and register, and from those abstractions into a new
+physical realization. A pianist faces the complementary problem: the
+fixed topography of white and black keys makes absolute pitch location
+explicit while the hand geometry changes across keys.</p>
+<p>The black keys are therefore not exceptions to the system. They are
+the coordinate system that lets the non-isomorphic keyboard become
+navigable.</p>
+</section></body>
+</html>
