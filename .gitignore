@@ -1,2 +1,8 @@
 .DS_Store
 book.html
+__pycache__/
+*.pyc
+edition-design/v1.3/rebuild/
+edition-design/v1.3.1/rebuild/
+edition-design/v1.3.2/rebuild/
+edition-design/v1.3.3/piano_transposition_manual_v1.3.3.md
