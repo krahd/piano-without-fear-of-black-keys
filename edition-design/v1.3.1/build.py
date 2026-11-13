@@ -3,11 +3,13 @@ from bs4 import BeautifulSoup
 import subprocess, re, hashlib
 from weasyprint import HTML
 
+EXPECTED_SOURCE_SHA = '0fd2c4030b21c7ce3b7454ac983a6821aec8acfe980f8ab978c301dc455a33b6'
 ROOT = Path(__file__).resolve().parent
 SRC= ROOT.parent.parent
-OUT=ROOT
+OUT=ROOT/'rebuild'
 OUT.mkdir(exist_ok=True)
-old=(SRC/'piano_transposition_manual.md').read_text(encoding='utf-8')
+old=(ROOT/'frozen_manuscript.md').read_text(encoding='utf-8')
+assert hashlib.sha256(old.encode()).hexdigest() == EXPECTED_SOURCE_SHA, 'Historical source mismatch'
 new=old
 replacements={
 '<h1 class="cover-title">Piano Without Fear of Black Keys</h1>':'<h1 class="cover-title">Piano<br>Without Fear<br>of Black Keys</h1>',
@@ -35,14 +37,14 @@ for el in soup.select('section.cover + .pagebreak'):
     el.decompose()
 for img in soup.select('img[src^="assets/"]'):
     name=img['src'].split('/')[-1]
-    assert (SRC/'assets'/name).exists(), name
-    img['src']='../../assets/'+name
+    assert (ROOT.parent/'archive-assets-v1.3'/name).exists(), name
+    img['src']='../../archive-assets-v1.3/'+name
 for table in soup.find_all('table'):
     thead=table.find('thead')
     count=len(thead.find_all('th')) if thead else 0
     if count>=4: table['class']=table.get('class',[])+['wide']
 # Insert CSS link in head, using file URL resolution.
-link=soup.new_tag('link', rel='stylesheet', href='book.css')
+link=soup.new_tag('link', rel='stylesheet', href='../book.css')
 soup.head.append(link)
 html_file.write_text(str(soup),encoding='utf-8')
 PDF=OUT/'Piano_Without_Fear_of_Black_Keys_v1.3.1.pdf'

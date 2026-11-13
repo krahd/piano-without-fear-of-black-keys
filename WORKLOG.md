@@ -55,3 +55,12 @@ Verified current GitHub `main` already contains the complete standalone v1.3 boo
 ## 27 October 2026 - Whole-tone maintenance candidate
 
 Corrected twelve Appendix B final-note spellings and synchronised the convenience scale file. Added degree-letter/pitch-class regressions (204 physical rows, 288 scale/chord sequences), CI, and a fail-fast v1.3.2 build retaining the exact v1.3.1 CSS and all diagrams. Built and reviewed the 53-page PDF; only cover and pp. 43-44 differ in extracted text. Historical PDFs remain unchanged. Authorial review is pending before public main-branch replacement. See edition-design/v1.3.2/README.md.
+
+## 28 October 2026 — v1.3.3 audit-remediation candidate
+
+- Completed the remaining v1.3.2 technical audit changes in an isolated, checkpointed worktree; preserved the transposition-first purpose and both readership paths.
+- Repaired incomplete chord progression transposition, Push Fixed/Note control semantics, practice pacing, interval-formula wording, modal comparison and notation explanations.
+- Produced a 55-page 160×230 mm candidate with page-numbered contents, legible appendix chord tables and glossary, single-page conclusion, PDF tagging/metadata/links and HTML companion.
+- Preserved frozen manuscript/figure/style inputs for historical v1.3, v1.3.1 and v1.3.2 builders and configured separate rebuild paths.
+- Passed eight local/remote-independent source tests and a 55-page PDF audit. The Mac can rebuild from available isolated dependencies, but renderer versions give different binary hashes; release PDF remains the inspected WeasyPrint 68.0 output.
+- Real-player trials, printer proof and full accessibility certification remain separate validation tasks, not claimed as completed.
